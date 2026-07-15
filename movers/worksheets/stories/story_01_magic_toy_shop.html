@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Quest: 3 Magic Cloze Stories (Clean Reading)</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap');
+
+        body {
+            font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+            color: #111827;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 24px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .paper {
+            background: #ffffff;
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm 18mm;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            box-sizing: border-box;
+        }
+
+        /* Header Area */
+        .quiz-header {
+            border-bottom: 2px solid #111827;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #000000;
+            margin: 0 0 12px 0;
+        }
+
+        .meta-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 15px;
+            font-weight: 600;
+            color: #111827;
+        }
+
+        .meta-line {
+            border-bottom: 1.5px dashed #000000;
+            padding: 0 10px;
+            display: inline-block;
+            min-width: 130px;
+        }
+
+        .score-box {
+            border: 2px solid #000000;
+            border-radius: 6px;
+            padding: 3px 12px;
+            background: #ffffff;
+            font-weight: 700;
+        }
+
+        /* Story Block */
+        .story-block {
+            border: 1.5px solid #000000;
+            border-radius: 10px;
+            padding: 18px 20px;
+            margin-bottom: 26px;
+            page-break-inside: avoid;
+            background: #ffffff;
+        }
+
+        .story-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #000000;
+            border-left: 5px solid #000000;
+            padding-left: 10px;
+            margin-bottom: 12px;
+        }
+
+        /* Word Bank Container (Directly Above Story) */
+        .word-bank-box {
+            border: 1.5px dashed #000000;
+            border-radius: 8px;
+            padding: 10px 14px;
+            margin-bottom: 16px;
+            background: #ffffff;
+        }
+
+        .word-bank-title {
+            font-size: 13.5px;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 8px;
+        }
+
+        .chips-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 12px;
+        }
+
+        .chip {
+            border: 1px solid #000000;
+            border-radius: 5px;
+            padding: 3px 10px;
+            font-size: 14px;
+            font-weight: 600;
+            background: #ffffff;
+        }
+
+        /* Story Passage (Clean Blank Line, No Number Noise) */
+        .story-text {
+            font-size: 17px;
+            line-height: 2.3;
+            color: #111827;
+        }
+
+        .blank-line {
+            display: inline-block;
+            border-bottom: 2px solid #000000;
+            min-width: 85px;
+            text-align: center;
+            margin: 0 4px;
+        }
+
+        @media print {
+            body { background: #ffffff; padding: 0; }
+            .paper { box-shadow: none; width: 100%; padding: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="paper">
+
+    <!-- Header -->
+    <div class="quiz-header">
+        <h1 class="title">🪄 Story Quest: 3 Magic Cloze Stories</h1>
+        <div class="meta-row">
+            <div>Name (姓名): <span class="meta-line"></span></div>
+            <div>Date (日期): <span class="meta-line"></span></div>
+            <div class="score-box">Score: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; / 24</div>
+        </div>
+    </div>
+
+    <!-- Story 1 -->
+    <div class="story-block">
+        <div class="story-title">Story 1: The Magic Toy Shop (神奇玩具店)</div>
+        
+        <!-- Word Bank Top Box -->
+        <div class="word-bank-box">
+            <div class="word-bank-title">🎁 Word & Grammar Bank (請從選字盒選擇正確答案填入下方空格):</div>
+            <div class="chips-container">
+                <span class="chip">am</span>
+                <span class="chip">is</span>
+                <span class="chip">are</span>
+                <span class="chip">isn't</span>
+                <span class="chip">There is</span>
+                <span class="chip">There are</span>
+                <span class="chip">pirate</span>
+                <span class="chip">clown</span>
+                <span class="chip">kangaroo</span>
+                <span class="chip">panda</span>
+                <span class="chip">parrot</span>
+                <span class="chip">roller skates</span>
+                <span class="chip">roof</span>
+            </div>
+        </div>
+
+        <div class="story-text">
+            Hello! I <span class="blank-line"></span> Tim. Today, I am a brave <span class="blank-line"></span> with a big ship.<br>
+            I am in Mr. Jolly's Magic Toy Shop. Look! <span class="blank-line"></span> a tall <span class="blank-line"></span> and a small <span class="blank-line"></span>. They <span class="blank-line"></span> jumping on the floor!<br>
+            On the <span class="blank-line"></span>, there is a funny <span class="blank-line"></span>. He <span class="blank-line"></span> quiet; he is very loud! Next to him, a green <span class="blank-line"></span> says, "Hello!"<br>
+            Oh, where are my shoes? They aren't here. My <span class="blank-line"></span> are on my feet. I am ready to skate home!
+        </div>
+    </div>
+
+    <!-- Story 2 -->
+    <div class="story-block">
+        <div class="story-title">Story 2: The Sunny Farm & Pet Corner (陽光農場與寵物角)</div>
+        
+        <!-- Word Bank Top Box -->
+        <div class="word-bank-box">
+            <div class="word-bank-title">🎁 Word & Grammar Bank (請從選字盒選擇正確答案填入下方空格):</div>
+            <div class="chips-container">
+                <span class="chip">am not</span>
+                <span class="chip">aren't</span>
+                <span class="chip">Is there</span>
+                <span class="chip">Are there</span>
+                <span class="chip">farmer</span>
+                <span class="chip">farm</span>
+                <span class="chip">puppy</span>
+                <span class="chip">kitten</span>
+                <span class="chip">rabbit</span>
+                <span class="chip">cage</span>
+                <span class="chip">bat</span>
+                <span class="chip">comic book</span>
+            </div>
+        </div>
+
+        <div class="story-text">
+            My uncle is a happy <span class="blank-line"></span>. He works on a big <span class="blank-line"></span>.<br>
+            <span class="blank-line"></span> any cute animals here? Yes! Look at the grass. A soft white <span class="blank-line"></span> and a tiny <span class="blank-line"></span> are playing together. Nearby, a little brown <span class="blank-line"></span> is sleeping in a wooden <span class="blank-line"></span>.<br>
+            <span class="blank-line"></span> any scary wolves on the farm? No, there <span class="blank-line"></span>!<br>
+            I <span class="blank-line"></span> scared of the animals. Under the tree, a black <span class="blank-line"></span> is hanging upside down. I sit on the bench and read my favorite <span class="blank-line"></span>. What a fun day!
+        </div>
+    </div>
+
+    <!-- Story 3 -->
+    <div class="story-block">
+        <div class="story-title">Story 3: The Ocean World & Safari Park (海洋世界與野生動物園)</div>
+        
+        <!-- Word Bank Top Box -->
+        <div class="word-bank-box">
+            <div class="word-bank-title">🎁 Word & Grammar Bank (請從選字盒選擇正確答案填入下方空格):</div>
+            <div class="chips-container">
+                <span class="chip">is</span>
+                <span class="chip">are</span>
+                <span class="chip">isn't</span>
+                <span class="chip">There is</span>
+                <span class="chip">There are</span>
+                <span class="chip">dolphin</span>
+                <span class="chip">whale</span>
+                <span class="chip">shark</span>
+                <span class="chip">lion</span>
+                <span class="chip">tall</span>
+            </div>
+        </div>
+
+        <div class="story-text">
+            Welcome to Ocean World! <span class="blank-line"></span> a smart blue <span class="blank-line"></span> swimming in the pool. It <span class="blank-line"></span> slow; it is super fast!<br>
+            Look over there! <span class="blank-line"></span> two giant grey <span class="blank-line"></span> in the deep water. Are there any scary <span class="blank-line"></span>? No, there <span class="blank-line"></span> any sharks in this pool!<br>
+            Next to the pool, a wild <span class="blank-line"></span> is roaring. He is <span class="blank-line"></span> and strong. The animals <span class="blank-line"></span> all very excited today!
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
