@@ -46,6 +46,9 @@ This specification document outlines the standardized design, layout, typography
 - **100% Coverage Rule**: Together, the 3 stories must cover **100% of the target grammar rules and vocabulary words** for that lesson.
 
 ### **Word Bank & Blank Formatting**
+- **Unique Clue Words Rule (消除多重解答)**:
+  - Always include a **unique descriptive clue** before or after noun/adjective blanks (e.g., `a tall hopping _____` for `kangaroo`, `a small black-and-white _____` for `panda`, `a tiny meowing _____` for `kitten`, `a soft white long-eared _____` for `rabbit`).
+  - Ensures every blank has **100% unique, 1-to-1 unambiguous alignment** with the Word Bank.
 - **Word & Grammar Bank Position**:
   - Place a **Word & Grammar Bank Box** directly ON TOP of each story block (`border: 1.5px dashed #000`).
   - Kids pick candidate words from the top box and write directly into the story blanks.
