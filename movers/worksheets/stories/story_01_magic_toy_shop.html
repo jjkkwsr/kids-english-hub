@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Story Quest: 3 Magic Cloze Stories (Unique Clues Edition)</title>
+    <title>Story Quest: 3 Magic Cloze Stories (Mini Helper Edition)</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap');
 
@@ -102,6 +102,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 8px 12px;
+            margin-bottom: 10px;
         }
 
         .chip {
@@ -111,6 +112,24 @@
             font-size: 14px;
             font-weight: 600;
             background: #ffffff;
+        }
+
+        /* Mini Helper Box (獨立小單字補給站) */
+        .mini-helper-box {
+            border-top: 1px dashed #6b7280;
+            padding-top: 8px;
+            margin-top: 6px;
+            font-size: 12.5px;
+            color: #374151;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px 14px;
+            align-items: center;
+        }
+
+        .helper-tag {
+            font-weight: 600;
+            color: #111827;
         }
 
         /* Story Passage (Clean Blank Line, No Number Noise) */
@@ -168,6 +187,13 @@
                 <span class="chip">roller skates</span>
                 <span class="chip">roof</span>
             </div>
+
+            <!-- Mini Helper Box -->
+            <div class="mini-helper-box">
+                <span class="helper-tag">💡 Mini Helper (小單字補給站):</span>
+                <span>• hopping = 會跳躍的</span>
+                <span>• black-and-white = 黑白相間的</span>
+            </div>
         </div>
 
         <div class="story-text">
@@ -199,6 +225,15 @@
                 <span class="chip">bat</span>
                 <span class="chip">comic book</span>
             </div>
+
+            <!-- Mini Helper Box -->
+            <div class="mini-helper-box">
+                <span class="helper-tag">💡 Mini Helper (小單字補給站):</span>
+                <span>• barking = 吠叫的</span>
+                <span>• long-eared = 長耳朵的</span>
+                <span>• meowing = 喵喵叫的</span>
+                <span>• wooden = 木頭製的</span>
+            </div>
         </div>
 
         <div class="story-text">
@@ -226,6 +261,13 @@
                 <span class="chip">lion</span>
                 <span class="chip">tall</span>
                 <span class="chip">comic</span>
+            </div>
+
+            <!-- Mini Helper Box -->
+            <div class="mini-helper-box">
+                <span class="helper-tag">💡 Mini Helper (小單字補給站):</span>
+                <span>• sharp = 尖銳的</span>
+                <span>• roaring = 吼叫的</span>
             </div>
         </div>
 

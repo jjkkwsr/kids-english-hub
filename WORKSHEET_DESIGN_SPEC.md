@@ -51,7 +51,7 @@ This specification document outlines the standardized design, layout, typography
   - Ensures every blank has **100% unique, 1-to-1 unambiguous alignment** with the Word Bank.
 - **Word & Grammar Bank Position**:
   - Place a **Word & Grammar Bank Box** directly ON TOP of each story block (`border: 1.5px dashed #000`).
-  - Kids pick candidate words from the top box and write directly into the story blanks.
+  - **Mini Helper Box (小單字補給站)**: Include a small inline list of non-target clue translations (e.g., `barking = 吠叫的`, `meowing = 喵喵叫的`, `wooden = 木頭製的`) at the bottom of the Word Bank box to provide instant Chinese support without cluttering the story text.
 - **Clean Reading (No Number Noise)**:
   - **DO NOT include numeric markers** (e.g., `(1)`, `(2)`) inside the story text blanks or questions.
   - Use clean, wide underlined blanks (`<span class="blank-line"></span>` or `____________`).
