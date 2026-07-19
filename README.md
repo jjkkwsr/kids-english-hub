@@ -14,7 +14,7 @@ kids-english-hub/
 ├── movers/                    # 🟡 Movers Level (Ages 8–9, active module)
 │   ├── vocabularies/          # Vocabulary topic lists (CSV)
 │   ├── grammar_analysis/      # Core grammar lesson guides (.md)
-│   └── worksheets/            # Quizzes & Story Cloze worksheets (.md & .html)
+│   └── worksheets/            # Quizzes & Story Cloze worksheets (.html)
 └── flyers/                    # 🔴 Flyers Level (Ages 10–12, reserved)
 ```
 

@@ -17,7 +17,7 @@ This specification document outlines the standardized design, layout, typography
 
 ---
 
-## 📝 2. Quiz Worksheet Specification (`quiz_XX.md` / `quiz_XX.html`)
+## 📝 2. Quiz Worksheet Specification (`quiz_XX.html`)
 
 ### **Structure & Volume**
 - **Header**: Name, Date, and Score Box (`Score: ____ / 20`).
@@ -39,7 +39,7 @@ This specification document outlines the standardized design, layout, typography
 
 ---
 
-## 🪄 3. Story Cloze Worksheet Specification (`story_XX.md` / `story_XX.html`)
+## 🪄 3. Story Cloze Worksheet Specification (`story_XX.html`)
 
 ### **Structure & Coverage**
 - **Multi-Story Layout**: 3 distinct Cloze Stories per lesson.
