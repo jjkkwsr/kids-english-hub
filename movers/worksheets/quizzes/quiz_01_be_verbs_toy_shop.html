@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 1 Quiz: Be-Verbs & Toy Shop 🧸 (Relaxed Layout)</title>
+    <title>Lesson 1 Quiz: Be-Verbs & Toy Shop (Gathered Hints)</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap');
 
@@ -79,13 +79,13 @@
             margin-bottom: 20px;
         }
 
-        /* Single-Column Relaxed Question Cards */
+        /* Single-Column Relaxed Question Cards (No inline hint) */
         .question-card {
             background: #ffffff;
             border: 1px solid #000000;
             border-radius: 8px;
             padding: 16px 20px;
-            margin-bottom: 24px;
+            margin-bottom: 20px;
             page-break-inside: avoid;
         }
 
@@ -100,7 +100,7 @@
             font-size: 17px;
             font-weight: 600;
             line-height: 1.6;
-            margin-bottom: 14px;
+            margin-bottom: 12px;
         }
 
         .blank {
@@ -115,7 +115,6 @@
         .options-grid {
             display: flex;
             gap: 32px;
-            margin-bottom: 12px;
         }
 
         .option-item {
@@ -135,15 +134,39 @@
             background: #ffffff;
         }
 
-        /* B&W Hint Box */
-        .hint-box {
-            background-color: #ffffff;
-            border: 1.5px dashed #4b5563;
-            border-radius: 6px;
-            padding: 8px 12px;
-            font-size: 13.5px;
-            color: #1f2937;
+        /* Hints Helper Corner (Gathered Section) */
+        .hints-section {
+            border: 1.5px dashed #000000;
+            border-radius: 8px;
+            padding: 14px 18px;
+            margin: 28px 0;
+            background: #ffffff;
+            page-break-inside: avoid;
+        }
+
+        .hints-title {
+            font-size: 15px;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 6px;
+        }
+
+        .hints-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px 16px;
+        }
+
+        .hint-item {
+            font-size: 13px;
+            color: #374151;
             line-height: 1.4;
+        }
+
+        .hint-item strong {
+            color: #000000;
         }
 
         /* Speaking Section */
@@ -168,7 +191,6 @@
         @media print {
             body { background: #ffffff; padding: 0; }
             .paper { box-shadow: none; width: 100%; padding: 0; }
-            .page-break { page-break-before: always; }
         }
     </style>
 </head>
@@ -199,7 +221,6 @@
             <div class="option-item"><span class="checkbox"></span> B. am not</div>
             <div class="option-item"><span class="checkbox"></span> C. aren't</div>
         </div>
-        <div class="hint-box">💡 <strong>Hint:</strong> 看到 "I" (我)，想一想搭配哪一個 Be 動詞的否定型態呢？</div>
     </div>
 
     <!-- Q2 -->
@@ -211,7 +232,6 @@
             <div class="option-item"><span class="checkbox"></span> B. is</div>
             <div class="option-item"><span class="checkbox"></span> C. are</div>
         </div>
-        <div class="hint-box">💡 <strong>Hint:</strong> 袋鼠「和」熊貓加起來是兩個動物，算是複數 (They) 喔！</div>
     </div>
 
     <!-- Q3 -->
@@ -223,7 +243,6 @@
             <div class="option-item"><span class="checkbox"></span> B. are</div>
             <div class="option-item"><span class="checkbox"></span> C. am</div>
         </div>
-        <div class="hint-box">💡 <strong>Hint:</strong> 後面只有「一隻」紫色的蝙蝠 (單數)，前面要用哪一個呢？</div>
     </div>
 
     <!-- Q4 -->
@@ -235,7 +254,6 @@
             <div class="option-item"><span class="checkbox"></span> B. Are</div>
             <div class="option-item"><span class="checkbox"></span> C. Am</div>
         </div>
-        <div class="hint-box">💡 <strong>Hint:</strong> 看到 dolphins (海豚) 後面有加 -s (複數)，問句要用哪一個開頭呢？</div>
     </div>
 
     <!-- Q5 -->
@@ -247,7 +265,6 @@
             <div class="option-item"><span class="checkbox"></span> B. shark</div>
             <div class="option-item"><span class="checkbox"></span> C. puppy</div>
         </div>
-        <div class="hint-box">💡 <strong>Hint:</strong> 大隻、灰色的，在大水缸游泳的尖牙海洋動物？</div>
     </div>
 
     <!-- Q6 -->
@@ -259,7 +276,6 @@
             <div class="option-item"><span class="checkbox"></span> B. am not</div>
             <div class="option-item"><span class="checkbox"></span> C. aren't</div>
         </div>
-        <div class="hint-box">💡 <strong>Hint:</strong> 主詞是 She (她)，否定要搭配哪一個小動詞呢？</div>
     </div>
 
     <!-- Q7 -->
@@ -271,7 +287,6 @@
             <div class="option-item"><span class="checkbox"></span> B. am</div>
             <div class="option-item"><span class="checkbox"></span> C. is</div>
         </div>
-        <div class="hint-box">💡 <strong>Hint:</strong> 用 Is there 提問，簡答時就用 Yes, there ______ 喔！</div>
     </div>
 
     <!-- Q8 -->
@@ -283,7 +298,6 @@
             <div class="option-item"><span class="checkbox"></span> B. rabbit</div>
             <div class="option-item"><span class="checkbox"></span> C. lion</div>
         </div>
-        <div class="hint-box">💡 <strong>Hint:</strong> 會蹦蹦跳 (hops)、長耳朵毛軟軟的可愛小動物是什麼？</div>
     </div>
 
     <!-- Q9 -->
@@ -295,7 +309,6 @@
             <div class="option-item"><span class="checkbox"></span> B. is</div>
             <div class="option-item"><span class="checkbox"></span> C. are</div>
         </div>
-        <div class="hint-box">💡 <strong>Hint:</strong> We (我們) 是複數，要搭配哪一個 Be 動詞呢？</div>
     </div>
 
     <!-- Q10 -->
@@ -307,7 +320,6 @@
             <div class="option-item"><span class="checkbox"></span> B. short</div>
             <div class="option-item"><span class="checkbox"></span> C. small</div>
         </div>
-        <div class="hint-box">💡 <strong>Hint:</strong> 小丑長得很高，高高的英文是哪一個單字呢？</div>
     </div>
 
     <!-- Q11 -->
@@ -319,7 +331,6 @@
             <div class="option-item"><span class="checkbox"></span> B. aren't</div>
             <div class="option-item"><span class="checkbox"></span> C. am not</div>
         </div>
-        <div class="hint-box">💡 <strong>Hint:</strong> 主詞是 They (他們)，否定句要用哪一個呢？</div>
     </div>
 
     <!-- Q12 -->
@@ -331,7 +342,6 @@
             <div class="option-item"><span class="checkbox"></span> B. am</div>
             <div class="option-item"><span class="checkbox"></span> C. are</div>
         </div>
-        <div class="hint-box">💡 <strong>Hint:</strong> 後面是 comic books (漫畫書，複數) 喔！</div>
     </div>
 
     <!-- Q13 -->
@@ -343,7 +353,6 @@
             <div class="option-item"><span class="checkbox"></span> B. aren't</div>
             <div class="option-item"><span class="checkbox"></span> C. am not</div>
         </div>
-        <div class="hint-box">💡 <strong>Hint:</strong> 主詞是 it，否定簡答要搭配哪一個呢？</div>
     </div>
 
     <!-- Q14 -->
@@ -355,7 +364,6 @@
             <div class="option-item"><span class="checkbox"></span> B. kitten</div>
             <div class="option-item"><span class="checkbox"></span> C. rabbit</div>
         </div>
-        <div class="hint-box">💡 <strong>Hint:</strong> 在大海洋 (deep ocean) 游泳的大鯨魚是哪一個？</div>
     </div>
 
     <!-- Q15 -->
@@ -367,7 +375,6 @@
             <div class="option-item"><span class="checkbox"></span> B. comic book</div>
             <div class="option-item"><span class="checkbox"></span> C. roof</div>
         </div>
-        <div class="hint-box">💡 <strong>Hint:</strong> 男孩喜歡看「漫畫書」，英文是哪一個？</div>
     </div>
 
     <!-- Q16 -->
@@ -379,7 +386,6 @@
             <div class="option-item"><span class="checkbox"></span> B. lion</div>
             <div class="option-item"><span class="checkbox"></span> C. bat</div>
         </div>
-        <div class="hint-box">💡 <strong>Hint:</strong> 萬獸之王獅子，英文是哪一個單字呢？</div>
     </div>
 
     <!-- Q17 -->
@@ -391,7 +397,6 @@
             <div class="option-item"><span class="checkbox"></span> B. roof</div>
             <div class="option-item"><span class="checkbox"></span> C. farm</div>
         </div>
-        <div class="hint-box">💡 <strong>Hint:</strong> 小狗被關在「籠子」裡，籠子的英文是？</div>
     </div>
 
     <!-- Q18 -->
@@ -403,7 +408,6 @@
             <div class="option-item"><span class="checkbox"></span> B. whale</div>
             <div class="option-item"><span class="checkbox"></span> C. parrot</div>
         </div>
-        <div class="hint-box">💡 <strong>Hint:</strong> 船頂或屋頂的英文是哪一個單字？</div>
     </div>
 
     <!-- Q19 -->
@@ -415,7 +419,6 @@
             <div class="option-item"><span class="checkbox"></span> B. Is</div>
             <div class="option-item"><span class="checkbox"></span> C. Are</div>
         </div>
-        <div class="hint-box">💡 <strong>Hint:</strong> 問對方 "you" 時，問句開頭用哪一個？</div>
     </div>
 
     <!-- Q20 -->
@@ -427,7 +430,33 @@
             <div class="option-item"><span class="checkbox"></span> B. are</div>
             <div class="option-item"><span class="checkbox"></span> C. am</div>
         </div>
-        <div class="hint-box">💡 <strong>Hint:</strong> 後面是 sharks (複數)，前面用哪一個？</div>
+    </div>
+
+    <!-- Hints Helper Corner (Gathered Section) -->
+    <div class="hints-section">
+        <div class="hints-title">💡 Hints Helper Corner (提示求助小站 - 遇到不會的題目可以來這裡看提示喔！):</div>
+        <div class="hints-grid">
+            <div class="hint-item"><strong>Q1:</strong> 看到 "I"，想一想搭配哪一個 Be 動詞的否定型態呢？</div>
+            <div class="hint-item"><strong>Q2:</strong> 袋鼠「和」熊貓加起來是兩個動物 (複數) 喔！</div>
+            <div class="hint-item"><strong>Q3:</strong> 後面只有「一隻」紫色的蝙蝠 (單數) 喔！</div>
+            <div class="hint-item"><strong>Q4:</strong> dolphins (海豚) 後面有加 -s (複數) 喔！</div>
+            <div class="hint-item"><strong>Q5:</strong> 大隻、灰色的，在大水缸游泳的尖牙海洋動物？</div>
+            <div class="hint-item"><strong>Q6:</strong> 主詞是 She (她)，否定要搭配哪一個呢？</div>
+            <div class="hint-item"><strong>Q7:</strong> 用 Is there 提問，簡答時用 Yes, there ______ 喔！</div>
+            <div class="hint-item"><strong>Q8:</strong> 會蹦蹦跳 (hops)、長耳朵毛軟軟的小動物是什麼？</div>
+            <div class="hint-item"><strong>Q9:</strong> We (我們) 是複數，要搭配哪一個 Be 動詞呢？</div>
+            <div class="hint-item"><strong>Q10:</strong> 小丑長得很高，高高的英文是哪一個單字呢？</div>
+            <div class="hint-item"><strong>Q11:</strong> 主詞是 They (他們)，否定句要用哪一個呢？</div>
+            <div class="hint-item"><strong>Q12:</strong> 後面是 comic books (漫畫書，複數) 喔！</div>
+            <div class="hint-item"><strong>Q13:</strong> 主詞是 it，否定簡答要搭配哪一個呢？</div>
+            <div class="hint-item"><strong>Q14:</strong> 在大海洋 (deep ocean) 游泳的大鯨魚是哪一個？</div>
+            <div class="hint-item"><strong>Q15:</strong> 男孩喜歡看「漫畫書」，英文是哪一個單字？</div>
+            <div class="hint-item"><strong>Q16:</strong> 萬獸之王獅子，英文是哪一個單字呢？</div>
+            <div class="hint-item"><strong>Q17:</strong> 小狗被關在「籠子」裡，籠子的英文是哪個？</div>
+            <div class="hint-item"><strong>Q18:</strong> 船頂或屋頂的英文是哪一個單字呢？</div>
+            <div class="hint-item"><strong>Q19:</strong> 問對方 "you" 時，問句開頭要用哪一個？</div>
+            <div class="hint-item"><strong>Q20:</strong> 後面是 sharks (複數)，前面要用哪一個？</div>
+        </div>
     </div>
 
     <!-- Part 2 -->

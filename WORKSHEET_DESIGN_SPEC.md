@@ -23,7 +23,10 @@ This specification document outlines the standardized design, layout, typography
 - **Header**: Name, Date, and Score Box (`Score: ____ / 20`).
 - **Part 1: Multiple Choice Questions (20 Questions)**:
   - Covers target Grammar lesson + Vocabulary lesson.
-  - Every question includes a **Kid-Friendly Hint (💡 Hint)** written in supportive Traditional Chinese.
+- **Hints Helper Corner (提示求助小站)**:
+  - **DO NOT** place hint boxes immediately inside individual question cards.
+  - Gather all Traditional Chinese hints into a dedicated **`Hints Helper Corner`** box (`border: 1.5px dashed #000`) placed at the end of Part 1 (or before Part 2).
+  - Encourages kids to solve questions independently first, while providing easy reference by question number (`Q1 Hint...`, `Q2 Hint...`) if they get stuck.
 - **Part 2: Speaking & Read Aloud Task**:
   - Must cover **100% of all vocabulary words** from the target vocabulary CSV list.
   - Includes a specific grammar task (e.g., *"Circle all Be-verbs / past simple verbs while reading aloud"*).
