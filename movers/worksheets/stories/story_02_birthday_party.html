@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Quest: 3 Party Cloze Stories (Mini Helper Edition)</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap');
+
+        body {
+            font-family: 'Fredoka', 'Noto Sans TC', sans-serif;
+            color: #111827;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 24px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .paper {
+            background: #ffffff;
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm 18mm;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            box-sizing: border-box;
+        }
+
+        /* Header Area */
+        .quiz-header {
+            border-bottom: 2px solid #111827;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #000000;
+            margin: 0 0 12px 0;
+        }
+
+        .meta-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 15px;
+            font-weight: 600;
+            color: #111827;
+        }
+
+        .meta-line {
+            border-bottom: 1.5px dashed #000000;
+            padding: 0 10px;
+            display: inline-block;
+            min-width: 130px;
+        }
+
+        .score-box {
+            border: 2px solid #000000;
+            border-radius: 6px;
+            padding: 3px 12px;
+            background: #ffffff;
+            font-weight: 700;
+        }
+
+        /* Story Block */
+        .story-block {
+            border: 1.5px solid #000000;
+            border-radius: 10px;
+            padding: 18px 20px;
+            margin-bottom: 26px;
+            page-break-inside: avoid;
+            background: #ffffff;
+        }
+
+        .story-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #000000;
+            border-left: 5px solid #000000;
+            padding-left: 10px;
+            margin-bottom: 12px;
+        }
+
+        /* Word Bank Container (Directly Above Story) */
+        .word-bank-box {
+            border: 1.5px dashed #000000;
+            border-radius: 8px;
+            padding: 10px 14px;
+            margin-bottom: 16px;
+            background: #ffffff;
+        }
+
+        .word-bank-title {
+            font-size: 13.5px;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 8px;
+        }
+
+        .chips-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 12px;
+            margin-bottom: 10px;
+        }
+
+        .chip {
+            border: 1px solid #000000;
+            border-radius: 5px;
+            padding: 3px 10px;
+            font-size: 14px;
+            font-weight: 600;
+            background: #ffffff;
+        }
+
+        /* Mini Helper Box (獨立小單字補給站) */
+        .mini-helper-box {
+            border-top: 1px dashed #6b7280;
+            padding-top: 8px;
+            margin-top: 6px;
+            font-size: 12.5px;
+            color: #374151;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px 14px;
+            align-items: center;
+        }
+
+        .helper-tag {
+            font-weight: 600;
+            color: #111827;
+        }
+
+        /* Story Passage (Clean Blank Line, No Number Noise) */
+        .story-text {
+            font-size: 17px;
+            line-height: 2.3;
+            color: #111827;
+        }
+
+        .blank-line {
+            display: inline-block;
+            border-bottom: 2px solid #000000;
+            min-width: 85px;
+            text-align: center;
+            margin: 0 4px;
+        }
+
+        @media print {
+            body { background: #ffffff; padding: 0; }
+            .paper { box-shadow: none; width: 100%; padding: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="paper">
+
+    <!-- Header -->
+    <div class="quiz-header">
+        <h1 class="title">🥳 Story Quest: 3 Party Cloze Stories</h1>
+        <div class="meta-row">
+            <div>Name (姓名): <span class="meta-line"></span></div>
+            <div>Date (日期): <span class="meta-line"></span></div>
+            <div class="score-box">Score: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; / 30</div>
+        </div>
+    </div>
+
+    <!-- Story 1 -->
+    <div class="story-block">
+        <div class="story-title">Story 1: The Big Family Party (家庭大聚會)</div>
+        
+        <!-- Word Bank Top Box -->
+        <div class="word-bank-box">
+            <div class="word-bank-title">🎁 Word & Grammar Bank (請從選字寶盒選擇正確答案填入下方空格):</div>
+            <div class="chips-container">
+                <span class="chip">goes</span>
+                <span class="chip">watches</span>
+                <span class="chip">doesn't</span>
+                <span class="chip">lives</span>
+                <span class="chip">grandparent</span>
+                <span class="chip">parent</span>
+                <span class="chip">grown-up</span>
+                <span class="chip">son</span>
+                <span class="chip">daughter</span>
+                <span class="chip">grandson</span>
+                <span class="chip">granddaughter</span>
+                <span class="chip">blond</span>
+            </div>
+
+            <!-- Mini Helper Box -->
+            <div class="mini-helper-box">
+                <span class="helper-tag">💡 Mini Helper (小單字補給站):</span>
+                <span>• arrive = 到達</span>
+                <span>• loudly = 大聲地</span>
+                <span>• proud = 感到自豪的</span>
+            </div>
+        </div>
+
+        <div class="story-text">
+            Today is a happy day! My kind <span class="blank-line"></span> and grandmother arrive at our house. Every <span class="blank-line"></span> at the party smiles and talks loudly.<br>
+            My dad is a loving <span class="blank-line"></span>. He <span class="blank-line"></span> to the kitchen and makes hot drinks. My mom <span class="blank-line"></span> TV in the living room. She <span class="blank-line"></span> like noisy games!<br>
+            Look at the children! Uncle Ben plays with his young <span class="blank-line"></span> and his little <span class="blank-line"></span>. They have bright <span class="blank-line"></span> hair. Grandpa is very proud of his brave <span class="blank-line"></span> and sweet <span class="blank-line"></span>. Everyone <span class="blank-line"></span> happily in this house!
+        </div>
+    </div>
+
+    <!-- Story 2 -->
+    <div class="story-block">
+        <div class="story-title">Story 2: Fun at the Dinner Table (餐桌上的美味時光)</div>
+        
+        <!-- Word Bank Top Box -->
+        <div class="word-bank-box">
+            <div class="word-bank-title">🎁 Word & Grammar Bank (請從選字寶盒選擇正確答案填入下方空格):</div>
+            <div class="chips-container">
+                <span class="chip">don't</span>
+                <span class="chip">cries</span>
+                <span class="chip">has</span>
+                <span class="chip">bowl</span>
+                <span class="chip">soup</span>
+                <span class="chip">cheese</span>
+                <span class="chip">plate</span>
+                <span class="chip">bottle</span>
+                <span class="chip">cup</span>
+                <span class="chip">glass</span>
+            </div>
+
+            <!-- Mini Helper Box -->
+            <div class="mini-helper-box">
+                <span class="helper-tag">💡 Mini Helper (小單字補給站):</span>
+                <span>• deep = 深的</span>
+                <span>• clear = 透明的</span>
+                <span>• appetite = 食慾</span>
+            </div>
+        </div>
+
+        <div class="story-text">
+            It is dinner time! Mom puts a deep <span class="blank-line"></span> of hot vegetable <span class="blank-line"></span> on the wooden table. My little baby brother <span class="blank-line"></span> when the soup is too hot!<br>
+            Dad has a slice of yellow <span class="blank-line"></span> on his white <span class="blank-line"></span>. He drinks juice from a clear glass <span class="blank-line"></span>. I <span class="blank-line"></span> drink coffee; I have a small <span class="blank-line"></span> of warm milk!<br>
+            Grandma pours juice into a tall <span class="blank-line"></span> for me. Everyone <span class="blank-line"></span> a great appetite tonight!
+        </div>
+    </div>
+
+    <!-- Story 3 -->
+    <div class="story-block">
+        <div class="story-title">Story 3: Hide and Seek in the Garden (花園裡的捉迷藏)</div>
+        
+        <!-- Word Bank Top Box -->
+        <div class="word-bank-box">
+            <div class="word-bank-title">🎁 Word & Grammar Bank (請從選字寶盒選擇正確答案填入下方空格):</div>
+            <div class="chips-container">
+                <span class="chip">hides</span>
+                <span class="chip">quiet</span>
+                <span class="chip">doesn't</span>
+                <span class="chip">flies</span>
+                <span class="chip">message</span>
+                <span class="chip">hide</span>
+                <span class="chip">sends</span>
+                <span class="chip">cage</span>
+            </div>
+
+            <!-- Mini Helper Box -->
+            <div class="mini-helper-box">
+                <span class="helper-tag">💡 Mini Helper (小單字補給站):</span>
+                <span>• sound = 聲音</span>
+                <span>• secret = 祕密的</span>
+            </div>
+        </div>
+
+        <div class="story-text">
+            After dinner, we play a fun game outside! My sister <span class="blank-line"></span> behind the big green tree. She is very <span class="blank-line"></span>; she <span class="blank-line"></span> make any sound.<br>
+            Look up! A colorful bird <span class="blank-line"></span> high over the garden. It doesn't like to stay inside the wooden <span class="blank-line"></span>. It carries a secret <span class="blank-line"></span> on its leg.<br>
+            We love to <span class="blank-line"></span> in the dark garden. Dad <span class="blank-line"></span> a text message to tell us it is time to come inside!
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

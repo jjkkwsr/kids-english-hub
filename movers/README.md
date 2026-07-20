@@ -35,5 +35,9 @@ Teaching materials and print-ready worksheets for Movers Level (Ages 8–9).
 ---
 
 ### 3. 📝 Worksheets (`worksheets/`)
-- **Quizzes**: [Quiz 1 Example](worksheets/quizzes/quiz_01_be_verbs_toy_shop.html) (20 questions + full vocabulary read-aloud task).
-- **Stories**: [Story 1 Example](worksheets/stories/story_01_magic_toy_shop.html) (3 cloze-reading stories with top Word Banks).
+- **Quizzes**:
+  - [Lesson 1 Quiz: Be-Verbs & Toy Shop](worksheets/quizzes/quiz_01_be_verbs_toy_shop.html)
+  - [Lesson 2 Quiz: Present Simple & The Party](worksheets/quizzes/quiz_02_present_simple_party.html)
+- **Stories**:
+  - [Lesson 1 Story: The Magic Toy Shop](worksheets/stories/story_01_magic_toy_shop.html)
+  - [Lesson 2 Story: The Birthday Party](worksheets/stories/story_02_birthday_party.html)
