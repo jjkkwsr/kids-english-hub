@@ -56,9 +56,22 @@ This specification document outlines the standardized design, layout, typography
 - **Word & Grammar Bank Position**:
   - Place a **Word & Grammar Bank Box** directly ON TOP of each story block (`border: 1.5px dashed #000`).
   - **Mini Helper Box (小單字補給站)**: Include a small inline list of non-target clue translations (e.g., `barking = 吠叫的`, `meowing = 喵喵叫的`, `wooden = 木頭製的`) at the bottom of the Word Bank box to provide instant Chinese support without cluttering the story text.
-- **Clean Reading (No Number Noise)**:
-  - **DO NOT include numeric markers** (e.g., `(1)`, `(2)`) inside the story text blanks or questions.
-  - Use clean, wide underlined blanks (`<span class="blank-line"></span>` or `____________`).
+## 🔑 4. Teacher's Answer Keys Specification (`answer_keys/`)
+
+### **Directory Structure**
+```text
+movers/worksheets/
+├── quizzes/                     # Student Quiz Sheets
+├── stories/                     # Student Story Sheets
+└── answer_keys/                 # Teacher's Answer Keys (解答卷專區)
+    ├── quizzes/                 # answer_quiz_XX.html
+    └── stories/                 # answer_story_XX.html
+```
+
+### **Design Standard**
+- **Header Badge**: `🔑 TEACHER'S ANSWER KEY (教師解答卷)`.
+- **Quiz Answer Key**: 4-column compact grid showing Question Number and correct Option Letter + Word (`Q1: B. am not`). Includes Part 2 Speaking task answer key.
+- **Story Answer Key**: Complete story passages with all filled blanks formatted in **bold underlined font** (`Hello! I <u><strong>am</strong></u> Tim...`) for 1-second instant grading.
   - **Reason**: Numeric markers interrupt fluent reading when kids perform Read Aloud practice.
 
 ---
