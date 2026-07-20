@@ -45,6 +45,7 @@ This specification document outlines the standardized design, layout, typography
 ## 🪄 3. Story Cloze Worksheet Specification (`story_XX.html`)
 
 ### **Structure & Coverage**
+- **Header Title Standard**: `Lesson X Story Quest: 3 Cloze Stories (Topic Name)` (e.g., `Lesson 2 Story Quest: 3 Cloze Stories (The Party)`).
 - **Multi-Story Layout**: 3 distinct Cloze Stories per lesson.
 - **100% Coverage Rule**: Together, the 3 stories must cover **100% of the target grammar rules and vocabulary words** for that lesson.
 
