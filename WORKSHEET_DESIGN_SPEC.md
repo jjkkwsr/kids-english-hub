@@ -25,8 +25,8 @@ This specification document outlines the standardized design, layout, typography
   - Covers target Grammar lesson + Vocabulary lesson.
 - **Hints Helper Corner (提示求助小站)**:
   - **DO NOT** place hint boxes immediately inside individual question cards.
-  - Gather all Traditional Chinese hints into a dedicated **`Hints Helper Corner`** box (`border: 1.5px dashed #000`) placed at the end of Part 1 (or before Part 2).
-  - Encourages kids to solve questions independently first, while providing easy reference by question number (`Q1 Hint...`, `Q2 Hint...`) if they get stuck.
+  - Gather all Traditional Chinese hints into a dedicated **`Hints Helper Corner`** box (`border: 1.5px dashed #000`) placed at the end of Part 1.
+  - **Single-Column Vertical List Layout**: Format hints as a single vertical column (`Q1: ...`, `Q2: ...`, `Q3: ...`) line-by-line rather than a 2-column grid, making it effortless for kids to trace question numbers.
 - **Part 2: Speaking & Read Aloud Task**:
   - Must cover **100% of all vocabulary words** from the target vocabulary CSV list.
   - Includes a specific grammar task (e.g., *"Circle all Be-verbs / past simple verbs while reading aloud"*).
