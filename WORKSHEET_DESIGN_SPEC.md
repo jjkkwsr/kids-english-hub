@@ -66,7 +66,9 @@ This specification document outlines the standardized design, layout, typography
   2. **🎁 Material Bank (造句素材寶盒)**:
      - All material chips must be **100% focused on that lesson's core vocabulary list and target grammar**.
      - Every single material chip **must attach an inline Traditional Chinese translation** in parentheses (e.g., `funny (搞笑的)`, `hot soup (熱湯)`, `earache (耳朵痛)`), ensuring kids learn and select words effortlessly without dictionary friction.
-  3. **✍️ Writing Area (造句書寫區)**: Clean guided underline blanks with a Traditional Chinese structural hint (`💡 結構提示`).
+  3. **✍️ Writing Area (造句書寫區)**:
+     - Reserve **2 distinct sentence writing lines (`1.` and `2.`)** per challenge card, enabling kids to practice multiple creative combinations from the Material Bank.
+     - Provide clean guided underline blanks formatted to worst-case phrase lengths, accompanied by a Traditional Chinese structural hint (`💡 結構提示`).
 
 ---
 

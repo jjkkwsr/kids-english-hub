@@ -30,7 +30,7 @@
         .quiz-header {
             border-bottom: 2px solid #111827;
             padding-bottom: 14px;
-            margin-bottom: 24px;
+            margin-bottom: 20px;
         }
 
         .title {
@@ -66,26 +66,26 @@
         .instruction {
             font-size: 14.5px;
             color: #374151;
-            margin-bottom: 22px;
+            margin-bottom: 20px;
         }
 
         /* Pattern Challenge Card */
         .pattern-card {
             border: 1.5px solid #000000;
             border-radius: 10px;
-            padding: 18px 20px;
-            margin-bottom: 26px;
+            padding: 16px 18px;
+            margin-bottom: 22px;
             page-break-inside: avoid;
             background: #ffffff;
         }
 
         .pattern-num {
-            font-size: 17px;
+            font-size: 16.5px;
             font-weight: 700;
             color: #000000;
             border-left: 5px solid #000000;
             padding-left: 10px;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
 
         /* Model Box */
@@ -93,39 +93,39 @@
             background: #ffffff;
             border: 1px solid #111827;
             border-radius: 6px;
-            padding: 10px 14px;
-            margin-bottom: 14px;
-            font-size: 16px;
+            padding: 8px 12px;
+            margin-bottom: 12px;
+            font-size: 15.5px;
             font-weight: 600;
         }
 
         .model-label {
-            font-size: 13px;
+            font-size: 12.5px;
             font-weight: 700;
             color: #4b5563;
             text-transform: uppercase;
-            margin-bottom: 4px;
+            margin-bottom: 3px;
         }
 
         /* Material Bank Box */
         .material-box {
             border: 1.5px dashed #000000;
             border-radius: 8px;
-            padding: 12px 14px;
-            margin-bottom: 16px;
+            padding: 10px 12px;
+            margin-bottom: 14px;
             background: #ffffff;
         }
 
         .material-title {
-            font-size: 13.5px;
+            font-size: 13px;
             font-weight: 700;
             color: #000000;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
 
         .material-group {
-            margin-bottom: 6px;
-            font-size: 13.5px;
+            margin-bottom: 4px;
+            font-size: 13px;
         }
 
         .material-group:last-child {
@@ -135,30 +135,42 @@
         .material-tag {
             font-weight: 700;
             color: #111827;
-            margin-right: 6px;
+            margin-right: 4px;
         }
 
         .chip {
             display: inline-block;
             border: 1px solid #000000;
             border-radius: 4px;
-            padding: 2px 8px;
-            font-size: 13.5px;
+            padding: 1px 7px;
+            font-size: 13px;
             font-weight: 600;
-            margin: 2px 4px;
+            margin: 2px 3px;
             background: #ffffff;
         }
 
         /* Writing Box */
         .writing-area {
-            margin-top: 14px;
+            margin-top: 12px;
         }
 
         .writing-prompt {
-            font-size: 15px;
+            font-size: 14.5px;
             font-weight: 700;
             color: #111827;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+        }
+
+        .sentence-row {
+            font-size: 16px;
+            line-height: 2.2;
+            margin-bottom: 6px;
+        }
+
+        .sentence-num {
+            font-weight: 700;
+            color: #000000;
+            margin-right: 4px;
         }
 
         .blank-line {
@@ -170,7 +182,7 @@
         }
 
         .hint-text {
-            font-size: 13px;
+            font-size: 12.5px;
             color: #4b5563;
             margin-top: 6px;
             font-style: italic;
@@ -197,7 +209,7 @@
     </div>
 
     <div class="instruction">
-        請觀察【示範句子】的文法結構，從【造句素材寶盒】中挑選本課核心單字（附中文解釋），照樣造出屬於你自己的英文新句子吧！
+        請觀察【示範句子】的文法結構，從【造句素材寶盒】中挑選本課核心單字，嘗試造出 <strong>2 個不同的英文新句子</strong>吧！
     </div>
 
     <!-- Pattern 1 -->
@@ -217,9 +229,12 @@
         </div>
 
         <div class="writing-area">
-            <div class="writing-prompt">✍️ 請照樣造句 (Your New Sentence):</div>
-            <div style="font-size: 17px; line-height: 2.2;">
-                I am a <span class="blank-line" style="min-width: 100px;"></span> <span class="blank-line" style="min-width: 110px;"></span> with a <span class="blank-line" style="min-width: 90px;"></span> <span class="blank-line" style="min-width: 160px;"></span>.
+            <div class="writing-prompt">✍️ 請造出 2 個句子 (Your New Sentences):</div>
+            <div class="sentence-row">
+                <span class="sentence-num">1.</span> I am a <span class="blank-line" style="min-width: 100px;"></span> <span class="blank-line" style="min-width: 110px;"></span> with a <span class="blank-line" style="min-width: 90px;"></span> <span class="blank-line" style="min-width: 160px;"></span>.
+            </div>
+            <div class="sentence-row">
+                <span class="sentence-num">2.</span> I am a <span class="blank-line" style="min-width: 100px;"></span> <span class="blank-line" style="min-width: 110px;"></span> with a <span class="blank-line" style="min-width: 90px;"></span> <span class="blank-line" style="min-width: 160px;"></span>.
             </div>
             <div class="hint-text">💡 結構提示：I am a [形容詞] [角色] with a [形容詞] [物品]. (我是一個...的...，帶著一個...)</div>
         </div>
@@ -242,9 +257,12 @@
         </div>
 
         <div class="writing-area">
-            <div class="writing-prompt">✍️ 請照樣造句 (Your New Sentence):</div>
-            <div style="font-size: 17px; line-height: 2.2;">
-                Look! There is a <span class="blank-line" style="min-width: 150px;"></span> <span class="blank-line" style="min-width: 120px;"></span> and a <span class="blank-line" style="min-width: 150px;"></span> <span class="blank-line" style="min-width: 120px;"></span>.
+            <div class="writing-prompt">✍️ 請造出 2 個句子 (Your New Sentences):</div>
+            <div class="sentence-row">
+                <span class="sentence-num">1.</span> Look! There is a <span class="blank-line" style="min-width: 150px;"></span> <span class="blank-line" style="min-width: 120px;"></span> and a <span class="blank-line" style="min-width: 150px;"></span> <span class="blank-line" style="min-width: 120px;"></span>.
+            </div>
+            <div class="sentence-row">
+                <span class="sentence-num">2.</span> Look! There is a <span class="blank-line" style="min-width: 150px;"></span> <span class="blank-line" style="min-width: 120px;"></span> and a <span class="blank-line" style="min-width: 150px;"></span> <span class="blank-line" style="min-width: 120px;"></span>.
             </div>
             <div class="hint-text">💡 結構提示：Look! There is a [形容詞] [動物1] and a [形容詞] [動物2]. (看！那裡有一隻...和一隻...)</div>
         </div>
@@ -266,9 +284,12 @@
         </div>
 
         <div class="writing-area">
-            <div class="writing-prompt">✍️ 請照樣造句 (Your New Sentence):</div>
-            <div style="font-size: 17px; line-height: 2.2;">
-                My <span class="blank-line" style="min-width: 180px;"></span> are on my <span class="blank-line" style="min-width: 100px;"></span>.
+            <div class="writing-prompt">✍️ 請造出 2 個句子 (Your New Sentences):</div>
+            <div class="sentence-row">
+                <span class="sentence-num">1.</span> My <span class="blank-line" style="min-width: 180px;"></span> are on my <span class="blank-line" style="min-width: 100px;"></span>.
+            </div>
+            <div class="sentence-row">
+                <span class="sentence-num">2.</span> My <span class="blank-line" style="min-width: 180px;"></span> are on my <span class="blank-line" style="min-width: 100px;"></span>.
             </div>
             <div class="hint-text">💡 結構提示：My [複數物品] are on my [身體部位/位置]. (我的...在我的...上面。)</div>
         </div>
@@ -290,9 +311,12 @@
         </div>
 
         <div class="writing-area">
-            <div class="writing-prompt">✍️ 請照樣造句 (Your New Sentence):</div>
-            <div style="font-size: 17px; line-height: 2.2;">
-                <span class="blank-line" style="min-width: 130px;"></span> isn't <span class="blank-line" style="min-width: 90px;"></span>; <span class="blank-line" style="min-width: 60px;"></span> is very <span class="blank-line" style="min-width: 90px;"></span>!
+            <div class="writing-prompt">✍️ 請造出 2 個句子 (Your New Sentences):</div>
+            <div class="sentence-row">
+                <span class="sentence-num">1.</span> <span class="blank-line" style="min-width: 130px;"></span> isn't <span class="blank-line" style="min-width: 90px;"></span>; <span class="blank-line" style="min-width: 60px;"></span> is very <span class="blank-line" style="min-width: 90px;"></span>!
+            </div>
+            <div class="sentence-row">
+                <span class="sentence-num">2.</span> <span class="blank-line" style="min-width: 130px;"></span> isn't <span class="blank-line" style="min-width: 90px;"></span>; <span class="blank-line" style="min-width: 60px;"></span> is very <span class="blank-line" style="min-width: 90px;"></span>!
             </div>
             <div class="hint-text">💡 結構提示：[人物] isn't [形容詞1]; [代名詞] is very [形容詞2]! (他/她不...；他/她非常...！)</div>
         </div>
