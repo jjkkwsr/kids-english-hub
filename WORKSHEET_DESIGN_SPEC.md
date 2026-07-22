@@ -63,7 +63,9 @@ This specification document outlines the standardized design, layout, typography
 - **4 Challenge Cards per Lesson**: Each card focuses on a key grammar structure.
 - **Each Challenge Card Contains**:
   1. **📌 Model Sentence (示範句子)**: Clear example sentence highlighting the target pattern.
-  2. **🎁 Material Bank (造句素材寶盒)**: Categorized chips (Adjectives, Nouns, Verbs, Places) for kids to pick and combine.
+  2. **🎁 Material Bank (造句素材寶盒)**:
+     - All material chips must be **100% focused on that lesson's core vocabulary list and target grammar**.
+     - Every single material chip **must attach an inline Traditional Chinese translation** in parentheses (e.g., `funny (搞笑的)`, `hot soup (熱湯)`, `earache (耳朵痛)`), ensuring kids learn and select words effortlessly without dictionary friction.
   3. **✍️ Writing Area (造句書寫區)**: Clean guided underline blanks with a Traditional Chinese structural hint (`💡 結構提示`).
 
 ---
