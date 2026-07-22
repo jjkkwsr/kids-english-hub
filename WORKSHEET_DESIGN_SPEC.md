@@ -56,16 +56,30 @@ This specification document outlines the standardized design, layout, typography
 - **Word & Grammar Bank Position**:
   - Place a **Word & Grammar Bank Box** directly ON TOP of each story block (`border: 1.5px dashed #000`).
   - **Mini Helper Box (小單字補給站)**: Include a small inline list of non-target clue translations (e.g., `barking = 吠叫的`, `meowing = 喵喵叫的`, `wooden = 木頭製的`) at the bottom of the Word Bank box to provide instant Chinese support without cluttering the story text.
-## 🔑 4. Teacher's Answer Keys Specification (`answer_keys/`)
+## ✍️ 4. Sentence Pattern Worksheet Specification (`pattern_XX.html`)
+
+### **Structure & Flow**
+- **Header Title**: `Lesson X Sentence Quest: Pattern Practice (照樣造句)`.
+- **4 Challenge Cards per Lesson**: Each card focuses on a key grammar structure.
+- **Each Challenge Card Contains**:
+  1. **📌 Model Sentence (示範句子)**: Clear example sentence highlighting the target pattern.
+  2. **🎁 Material Bank (造句素材寶盒)**: Categorized chips (Adjectives, Nouns, Verbs, Places) for kids to pick and combine.
+  3. **✍️ Writing Area (造句書寫區)**: Clean guided underline blanks with a Traditional Chinese structural hint (`💡 結構提示`).
+
+---
+
+## 🔑 5. Teacher's Answer Keys Specification (`answer_keys/`)
 
 ### **Directory Structure**
 ```text
 movers/worksheets/
 ├── quizzes/                     # Student Quiz Sheets
 ├── stories/                     # Student Story Sheets
+├── sentence_patterns/           # Student Sentence Pattern Sheets
 └── answer_keys/                 # Teacher's Answer Keys (解答卷專區)
     ├── quizzes/                 # answer_quiz_XX.html
-    └── stories/                 # answer_story_XX.html
+    ├── stories/                 # answer_story_XX.html
+    └── sentence_patterns/       # answer_pattern_XX.html
 ```
 
 ### **Design Standard**

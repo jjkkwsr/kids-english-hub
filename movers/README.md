@@ -43,6 +43,11 @@ Teaching materials and print-ready worksheets for Movers Level (Ages 8–9).
   - [Lesson 1 Story: The Magic Toy Shop](worksheets/stories/story_01_magic_toy_shop.html)
   - [Lesson 2 Story: The Party](worksheets/stories/story_02_birthday_party.html)
   - [Lesson 3 Story: At the Doctor's](worksheets/stories/story_03_at_the_doctors.html)
-- **Answer Keys (🔑 教師/家長解答卷專區)**:
+- **Sentence Patterns (✍️ 學生照樣造句練習卷 - 新增模組)**:
+  - [Lesson 1 Pattern: Be-Verbs & Toy Shop](worksheets/sentence_patterns/pattern_01_be_verbs_toy_shop.html)
+  - [Lesson 2 Pattern: Present Simple & The Party](worksheets/sentence_patterns/pattern_02_present_simple_party.html)
+  - [Lesson 3 Pattern: Present Simple Questions & At the Doctor's](worksheets/sentence_patterns/pattern_03_present_simple_questions_doctor.html)
+- **Answer Keys (🔑 教師/家長解答與示範造句專區)**:
   - **Quizzes**: [Lesson 1 Key](worksheets/answer_keys/quizzes/answer_quiz_01_be_verbs_toy_shop.html) | [Lesson 2 Key](worksheets/answer_keys/quizzes/answer_quiz_02_present_simple_party.html) | [Lesson 3 Key](worksheets/answer_keys/quizzes/answer_quiz_03_present_simple_questions_doctor.html)
   - **Stories**: [Lesson 1 Key](worksheets/answer_keys/stories/answer_story_01_magic_toy_shop.html) | [Lesson 2 Key](worksheets/answer_keys/stories/answer_story_02_birthday_party.html) | [Lesson 3 Key](worksheets/answer_keys/stories/answer_story_03_at_the_doctors.html)
+  - **Sentence Patterns**: [Lesson 1 Key](worksheets/answer_keys/sentence_patterns/answer_pattern_01_be_verbs_toy_shop.html) | [Lesson 2 Key](worksheets/answer_keys/sentence_patterns/answer_pattern_02_present_simple_party.html) | [Lesson 3 Key](worksheets/answer_keys/sentence_patterns/answer_pattern_03_present_simple_questions_doctor.html)
