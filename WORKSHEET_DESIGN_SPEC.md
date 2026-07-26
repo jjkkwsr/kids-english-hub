@@ -55,7 +55,7 @@ This specification document outlines the standardized design, layout, typography
   - Ensures every blank has **100% unique, 1-to-1 unambiguous alignment** with the Word Bank.
 - **Word & Grammar Bank Position**:
   - Place a **Word & Grammar Bank Box** directly ON TOP of each story block (`border: 1.5px dashed #000`).
-  - **Mini Helper Box (小單字補給站)**: Must comprehensively attach Traditional Chinese translations for **all non-key nouns** (e.g., `ship = 海盜船`, `house = 房子`, `clinic = 診所`, `scarf = 圍巾`) and secondary descriptors/verbs used in the story passages that are outside that lesson's official target vocabulary list. This eliminates reading comprehension barriers for kids.
+  - **Mini Helper Box (小單字補給站)**: Must comprehensively attach Traditional Chinese translations for **all non-key nouns and non-key verbs** (e.g., `ship = 海盜船`, `clinic = 診所`, `smiles = 微笑`, `nods = 點頭`, `wraps = 包裹`, `pours = 斟/倒`) and secondary descriptors used in the story passages that are outside that lesson's official target vocabulary list. This eliminates reading comprehension barriers for kids.
 ## ✍️ 4. Sentence Pattern Worksheet Specification (`pattern_XX.html`)
 
 ### **Structure & Flow**
