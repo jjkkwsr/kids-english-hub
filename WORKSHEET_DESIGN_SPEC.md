@@ -180,8 +180,23 @@ body {
 
 ---
 
-## 📂 5. File Location Reference
+## 🔄 6. Pilot Prototyping Workflow Rule (Lesson 3 優先試作規範)
+
+1. **Lesson 3 First Rule (第三課優先試作)**:
+   - Whenever a user requests design modifications, layout updates, feature additions, or formatting changes to any category of worksheets (**Quizzes**, **Story Cloze Worksheets**, **Sentence Pattern Worksheets**, or **Answer Keys**), the agent MUST **always implement the changes on Lesson 3 first** as a pilot prototype (`quiz_03.html`, `story_03.html`, `pattern_03.html`, `answer_quiz_03.html`).
+2. **Review & Approval Gate (使用者審核關卡)**:
+   - DO NOT apply requested changes to all lessons on the first try.
+   - Upon completing the Lesson 3 update, the agent must pause, provide clickable file preview links to Lesson 3, summarize the changes, and explicitly await user confirmation.
+3. **Rollout to All Lessons (全面推廣套用)**:
+   - Only after the user inspects Lesson 3 and explicitly confirms that the result meets expectations should the agent proceed to roll out the changes across all other lessons (Lesson 1, Lesson 2, Lesson 4, Lesson 5, etc.).
+4. **Time & Token Efficiency (節省時間與資源)**:
+   - Prevents redundant multi-file rewrites when design adjustments are required during iteration.
+
+---
+
+## 📂 7. File Location Reference
 
 - **Design Spec File**: `kids-english-hub/WORKSHEET_DESIGN_SPEC.md`
-- **Quiz Reference**: `kids-english-hub/movers/worksheets/quizzes/quiz_01_be_verbs_toy_shop.html`
-- **Story Reference**: `kids-english-hub/movers/worksheets/stories/story_01_magic_toy_shop.html`
+- **AI Agent Rules File**: `kids-english-hub/.agents/AGENTS.md`
+- **Quiz Reference**: `kids-english-hub/movers/worksheets/quizzes/quiz_03_present_simple_questions_doctor.html`
+- **Story Reference**: `kids-english-hub/movers/worksheets/stories/story_03_at_the_doctors.html`
