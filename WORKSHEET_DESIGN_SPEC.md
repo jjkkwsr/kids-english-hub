@@ -23,13 +23,21 @@ This specification document outlines the standardized design, layout, typography
 - **Header**: Name, Date, and Score Box (`Score: ____ / 20`).
 - **Part 1: Multiple Choice Questions (20 Questions)**:
   - Covers target Grammar lesson + Vocabulary lesson.
+  - **Balanced Option Distribution (A/B/C 隨機分佈規範)**:
+    - Correct options (A, B, C) must be **evenly distributed** across the 20 questions (e.g., ~6 A's, ~7 B's, ~7 C's).
+    - Avoid consecutive duplicate option clusters (no 3+ same option letters in a row). All options A, B, C must be actively utilized.
+  - **Question Stem Vocabulary Hints (題幹生字對照提示)**:
+    - Whenever a question stem contains non-blank target words or secondary vocabulary (e.g., `stethoscope`, `swallow`, `clinic`, `patient`, `examination`, `scarf`), attach an inline **`💡 單字對照: ...`** badge next to the question text (e.g., `<span class="q-hint">💡 單字對照: clinic = 診所 | medicine = 藥物</span>`) to eliminate reading comprehension barriers for kids.
 - **Hints Helper Corner (提示求助小站)**:
-  - **DO NOT** place hint boxes immediately inside individual question cards.
+  - **DO NOT** place grammar hint boxes immediately inside individual question cards.
   - Gather all Traditional Chinese hints into a dedicated **`Hints Helper Corner`** box (`border: 1.5px dashed #000`) placed at the end of Part 1.
   - **Single-Column Vertical List Layout**: Format hints as a single vertical column (`Q1: ...`, `Q2: ...`, `Q3: ...`) line-by-line rather than a 2-column grid, making it effortless for kids to trace question numbers.
 - **Part 2: Speaking & Read Aloud Task**:
-  - Must cover **100% of all vocabulary words** from the target vocabulary CSV list.
-  - Includes a specific grammar task (e.g., *"Circle all Be-verbs / past simple verbs while reading aloud"*).
+  - Must cover **100% of all 20 vocabulary words** from the target vocabulary CSV list.
+  - **Inline KK Phonetic Symbols (句中內嵌 KK 音標)**:
+    - Annotate **KK Phonetic Symbols** (`<span class="kk">/ˈdɑktɚ/</span>`) directly next to each target vocabulary word inside the sentence text.
+    - Provide a **`💡 單字對照: ...`** card directly below each sentence listing target word to Traditional Chinese translation pairs.
+  - Includes a specific grammar task (e.g., *"Circle all Be-verbs / Do-Does auxiliary verbs while reading aloud"*).
 
 ### **Layout & Typography Rules**
 - **Single-Column Relaxed Layout**:

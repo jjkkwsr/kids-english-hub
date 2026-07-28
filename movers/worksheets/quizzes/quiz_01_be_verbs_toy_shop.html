@@ -184,16 +184,51 @@
             margin-top: 14px;
         }
 
+        .q-hint {
+            font-size: 13px;
+            font-weight: 500;
+            color: #4b5563;
+            background: #f9fafb;
+            border: 1px solid #d1d5db;
+            padding: 2px 7px;
+            border-radius: 4px;
+            margin-left: 6px;
+            display: inline-block;
+        }
+
         .speaking-item {
             background: #ffffff;
-            border: 1px solid #000000;
+            border: 1.5px solid #000000;
             padding: 12px 16px;
             border-radius: 6px;
             margin-bottom: 14px;
             font-size: 16px;
             font-weight: 600;
-            line-height: 1.5;
+            line-height: 1.6;
             page-break-inside: avoid;
+        }
+
+        .kk {
+            font-size: 13px;
+            font-weight: 600;
+            color: #2563eb;
+            background: #eff6ff;
+            padding: 1px 5px;
+            border-radius: 4px;
+            margin-left: 2px;
+            margin-right: 4px;
+            font-family: 'Fredoka', sans-serif;
+        }
+
+        .kk-badge {
+            margin-top: 6px;
+            font-size: 13px;
+            font-weight: 500;
+            color: #374151;
+            background: #f3f4f6;
+            padding: 4px 10px;
+            border-radius: 4px;
+            display: block;
         }
 
         @media print {
@@ -223,7 +258,7 @@
     <!-- Q1 (Ans: B) -->
     <div class="question-card">
         <div class="q-number">Question 1</div>
-        <div class="q-text">1. I <span class="blank"></span> a pirate. I am a clown.</div>
+        <div class="q-text">1. I <span class="blank"></span> a pirate. I am a clown. <span class="q-hint">💡 單字對照: pirate = 海盜 | clown = 小丑</span></div>
         <div class="options-grid">
             <div class="option-item"><span class="checkbox"></span> A. am</div>
             <div class="option-item"><span class="checkbox"></span> B. am not</div>
@@ -234,7 +269,7 @@
     <!-- Q2 (Ans: C) -->
     <div class="question-card">
         <div class="q-number">Question 2</div>
-        <div class="q-text">2. The kangaroo and the panda <span class="blank"></span> in the cage.</div>
+        <div class="q-text">2. The kangaroo and the panda <span class="blank"></span> in the cage. <span class="q-hint">💡 單字對照: kangaroo = 袋鼠 | panda = 熊貓 | cage = 籠子</span></div>
         <div class="options-grid">
             <div class="option-item"><span class="checkbox"></span> A. is</div>
             <div class="option-item"><span class="checkbox"></span> B. am</div>
@@ -245,7 +280,7 @@
     <!-- Q3 (Ans: A) -->
     <div class="question-card">
         <div class="q-number">Question 3</div>
-        <div class="q-text">3. Look! There <span class="blank"></span> a purple bat on the roof.</div>
+        <div class="q-text">3. Look! There <span class="blank"></span> a purple bat on the roof. <span class="q-hint">💡 單字對照: bat = 蝙蝠 | roof = 屋頂</span></div>
         <div class="options-grid">
             <div class="option-item"><span class="checkbox"></span> A. is</div>
             <div class="option-item"><span class="checkbox"></span> B. are</div>
@@ -256,7 +291,7 @@
     <!-- Q4 (Ans: B) -->
     <div class="question-card">
         <div class="q-number">Question 4</div>
-        <div class="q-text">4. <span class="blank"></span> there any dolphins in the water tank?</div>
+        <div class="q-text">4. <span class="blank"></span> there any dolphins in the water tank? <span class="q-hint">💡 單字對照: dolphins = 海豚 | water tank = 水缸</span></div>
         <div class="options-grid">
             <div class="option-item"><span class="checkbox"></span> A. Is</div>
             <div class="option-item"><span class="checkbox"></span> B. Are</div>
@@ -267,7 +302,7 @@
     <!-- Q5 (Ans: C) -->
     <div class="question-card">
         <div class="q-number">Question 5</div>
-        <div class="q-text">5. Look at that scary animal! It is a big grey <span class="blank"></span>.</div>
+        <div class="q-text">5. Look at that scary animal! It is a big grey <span class="blank"></span>. <span class="q-hint">💡 單字對照: scary = 可怕的 | animal = 動物</span></div>
         <div class="options-grid">
             <div class="option-item"><span class="checkbox"></span> A. kitten</div>
             <div class="option-item"><span class="checkbox"></span> B. puppy</div>
@@ -278,7 +313,7 @@
     <!-- Q6 (Ans: A) -->
     <div class="question-card">
         <div class="q-number">Question 6</div>
-        <div class="q-text">6. She <span class="blank"></span> a teacher. She is a farmer.</div>
+        <div class="q-text">6. She <span class="blank"></span> a teacher. She is a farmer. <span class="q-hint">💡 單字對照: teacher = 老師 | farmer = 農夫</span></div>
         <div class="options-grid">
             <div class="option-item"><span class="checkbox"></span> A. isn't</div>
             <div class="option-item"><span class="checkbox"></span> B. aren't</div>
@@ -289,7 +324,7 @@
     <!-- Q7 (Ans: C) -->
     <div class="question-card">
         <div class="q-number">Question 7</div>
-        <div class="q-text">7. Is there any milk for the kitten? — Yes, there <span class="blank"></span>.</div>
+        <div class="q-text">7. Is there any milk for the kitten? — Yes, there <span class="blank"></span>. <span class="q-hint">💡 單字對照: milk = 牛奶 | kitten = 小貓</span></div>
         <div class="options-grid">
             <div class="option-item"><span class="checkbox"></span> A. are</div>
             <div class="option-item"><span class="checkbox"></span> B. am</div>
@@ -300,7 +335,7 @@
     <!-- Q8 (Ans: B) -->
     <div class="question-card">
         <div class="q-number">Question 8</div>
-        <div class="q-text">8. A soft white <span class="blank"></span> hops near the puppy.</div>
+        <div class="q-text">8. A soft white <span class="blank"></span> hops near the puppy. <span class="q-hint">💡 單字對照: soft = 軟軟的 | hops = 跳躍 | puppy = 小狗</span></div>
         <div class="options-grid">
             <div class="option-item"><span class="checkbox"></span> A. whale</div>
             <div class="option-item"><span class="checkbox"></span> B. rabbit</div>
@@ -311,7 +346,7 @@
     <!-- Q9 (Ans: A) -->
     <div class="question-card">
         <div class="q-number">Question 9</div>
-        <div class="q-text">9. We <span class="blank"></span> ready to play with roller skates.</div>
+        <div class="q-text">9. We <span class="blank"></span> ready to play with roller skates. <span class="q-hint">💡 單字對照: ready = 準備好 | roller skates = 輪滑鞋</span></div>
         <div class="options-grid">
             <div class="option-item"><span class="checkbox"></span> A. are</div>
             <div class="option-item"><span class="checkbox"></span> B. is</div>
@@ -322,7 +357,7 @@
     <!-- Q10 (Ans: C) -->
     <div class="question-card">
         <div class="q-number">Question 10</div>
-        <div class="q-text">10. The clown has a red nose. He is very <span class="blank"></span>.</div>
+        <div class="q-text">10. The clown has a red nose. He is very <span class="blank"></span>. <span class="q-hint">💡 單字對照: clown = 小丑 | red nose = 紅鼻子</span></div>
         <div class="options-grid">
             <div class="option-item"><span class="checkbox"></span> A. short</div>
             <div class="option-item"><span class="checkbox"></span> B. small</div>
@@ -333,7 +368,7 @@
     <!-- Q11 (Ans: B) -->
     <div class="question-card">
         <div class="q-number">Question 11</div>
-        <div class="q-text">11. They <span class="blank"></span> in the pet shop. They are on the farm.</div>
+        <div class="q-text">11. They <span class="blank"></span> in the pet shop. They are on the farm. <span class="q-hint">💡 單字對照: pet shop = 寵物店 | farm = 農場</span></div>
         <div class="options-grid">
             <div class="option-item"><span class="checkbox"></span> A. isn't</div>
             <div class="option-item"><span class="checkbox"></span> B. aren't</div>
@@ -344,7 +379,7 @@
     <!-- Q12 (Ans: C) -->
     <div class="question-card">
         <div class="q-number">Question 12</div>
-        <div class="q-text">12. There <span class="blank"></span> some funny comic books on the desk.</div>
+        <div class="q-text">12. There <span class="blank"></span> some funny comic books on the desk. <span class="q-hint">💡 單字對照: funny = 搞笑的 | comic books = 漫畫書</span></div>
         <div class="options-grid">
             <div class="option-item"><span class="checkbox"></span> A. is</div>
             <div class="option-item"><span class="checkbox"></span> B. am</div>
@@ -355,7 +390,7 @@
     <!-- Q13 (Ans: A) -->
     <div class="question-card">
         <div class="q-number">Question 13</div>
-        <div class="q-text">13. Is that a blue bird? — No, it <span class="blank"></span>!</div>
+        <div class="q-text">13. Is that a blue bird? — No, it <span class="blank"></span>! <span class="q-hint">💡 單字對照: blue bird = 藍色的鳥</span></div>
         <div class="options-grid">
             <div class="option-item"><span class="checkbox"></span> A. isn't</div>
             <div class="option-item"><span class="checkbox"></span> B. aren't</div>
@@ -366,7 +401,7 @@
     <!-- Q14 (Ans: B) -->
     <div class="question-card">
         <div class="q-number">Question 14</div>
-        <div class="q-text">14. A big grey <span class="blank"></span> is swimming in the deep ocean.</div>
+        <div class="q-text">14. A big grey <span class="blank"></span> is swimming in the deep ocean. <span class="q-hint">💡 單字對照: swimming = 游泳 | deep ocean = 深海</span></div>
         <div class="options-grid">
             <div class="option-item"><span class="checkbox"></span> A. bat</div>
             <div class="option-item"><span class="checkbox"></span> B. whale</div>
@@ -377,7 +412,7 @@
     <!-- Q15 (Ans: C) -->
     <div class="question-card">
         <div class="q-number">Question 15</div>
-        <div class="q-text">15. The boy loves reading a <span class="blank"></span> in his room.</div>
+        <div class="q-text">15. The boy loves reading a <span class="blank"></span> in his room. <span class="q-hint">💡 單字對照: loves = 喜歡 | reading = 閱讀</span></div>
         <div class="options-grid">
             <div class="option-item"><span class="checkbox"></span> A. cage</div>
             <div class="option-item"><span class="checkbox"></span> B. roof</div>
@@ -388,7 +423,7 @@
     <!-- Q16 (Ans: B) -->
     <div class="question-card">
         <div class="q-number">Question 16</div>
-        <div class="q-text">16. The wild <span class="blank"></span> is the king of the jungle.</div>
+        <div class="q-text">16. The wild <span class="blank"></span> is the king of the jungle. <span class="q-hint">💡 單字對照: wild = 野生的 | king = 國王 | jungle = 叢林</span></div>
         <div class="options-grid">
             <div class="option-item"><span class="checkbox"></span> A. panda</div>
             <div class="option-item"><span class="checkbox"></span> B. lion</div>
@@ -399,7 +434,7 @@
     <!-- Q17 (Ans: A) -->
     <div class="question-card">
         <div class="q-number">Question 17</div>
-        <div class="q-text">17. Is there a brown puppy inside the <span class="blank"></span>?</div>
+        <div class="q-text">17. Is there a brown puppy inside the <span class="blank"></span>? <span class="q-hint">💡 單字對照: puppy = 小狗 | inside = 裡面</span></div>
         <div class="options-grid">
             <div class="option-item"><span class="checkbox"></span> A. cage</div>
             <div class="option-item"><span class="checkbox"></span> B. farm</div>
@@ -410,7 +445,7 @@
     <!-- Q18 (Ans: C) -->
     <div class="question-card">
         <div class="q-number">Question 18</div>
-        <div class="q-text">18. The pirate stands on the <span class="blank"></span> of the ship.</div>
+        <div class="q-text">18. The pirate stands on the <span class="blank"></span> of the ship. <span class="q-hint">💡 單字對照: pirate = 海盜 | stands = 站立 | ship = 船</span></div>
         <div class="options-grid">
             <div class="option-item"><span class="checkbox"></span> A. cage</div>
             <div class="option-item"><span class="checkbox"></span> B. farm</div>
@@ -421,7 +456,7 @@
     <!-- Q19 (Ans: B) -->
     <div class="question-card">
         <div class="q-number">Question 19</div>
-        <div class="q-text">19. <span class="blank"></span> you a brave farmer? — Yes, I am!</div>
+        <div class="q-text">19. <span class="blank"></span> you a brave farmer? — Yes, I am! <span class="q-hint">💡 單字對照: brave = 勇敢的 | farmer = 農夫</span></div>
         <div class="options-grid">
             <div class="option-item"><span class="checkbox"></span> A. Is</div>
             <div class="option-item"><span class="checkbox"></span> B. Are</div>
@@ -432,7 +467,7 @@
     <!-- Q20 (Ans: A) -->
     <div class="question-card">
         <div class="q-number">Question 20</div>
-        <div class="q-text">20. There <span class="blank"></span> no sharks in the swimming pool.</div>
+        <div class="q-text">20. There <span class="blank"></span> no sharks in the swimming pool. <span class="q-hint">💡 單字對照: sharks = 鯊魚 | swimming pool = 游泳池</span></div>
         <div class="options-grid">
             <div class="option-item"><span class="checkbox"></span> A. are</div>
             <div class="option-item"><span class="checkbox"></span> B. is</div>
@@ -469,15 +504,33 @@
 
     <!-- Part 2 -->
     <div class="section-title">Part 2: Speaking & Read Aloud Task (單字朗讀與句型任務 🗣️)</div>
-    <div class="instruction">請大聲朗讀以下句子，<strong>完整覆蓋 Lesson 1 所有 21 個重點單字</strong>，並在朗讀時圈出句中的 Be 動詞 (am / is / are)：</div>
+    <div class="instruction">請大聲朗讀以下句子，參考粗體字後方的 <strong>KK 音標</strong>，並在朗讀時圈出句中的 Be 動詞 (am / is / are)：</div>
 
     <ul class="speaking-list">
-        <li class="speaking-item">1. The <strong>clown</strong> and the <strong>pirate</strong> are jumping on the <strong>farm</strong>. <em>(單字: clown, pirate, farm)</em></li>
-        <li class="speaking-item">2. A <strong>tall</strong> <strong>farmer</strong> is looking at the <strong>kangaroo</strong> and the <strong>panda</strong>. <em>(單字: tall, farmer, kangaroo, panda)</em></li>
-        <li class="speaking-item">3. The cute <strong>puppy</strong> and the small <strong>kitten</strong> are playing with a <strong>rabbit</strong>. <em>(單字: puppy, kitten, rabbit)</em></li>
-        <li class="speaking-item">4. Look! A green <strong>parrot</strong> is sitting on the <strong>cage</strong>, and a black <strong>bat</strong> is under the <strong>roof</strong>. <em>(單字: parrot, cage, bat, roof)</em></li>
-        <li class="speaking-item">5. The smart <strong>dolphin</strong> and the big grey <strong>whale</strong> are swimming away from the scary <strong>shark</strong>. <em>(單字: dolphin, whale, shark)</em></li>
-        <li class="speaking-item">6. The funny <strong>comic</strong> (or <strong>comic book</strong>) and fast <strong>roller skates</strong> are on the desk next to a <strong>lion</strong> toy. <em>(單字: comic, comic book, roller skates, lion)</em></li>
+        <li class="speaking-item">
+            1. The <strong>clown</strong> <span class="kk">/klaʊn/</span> and the <strong>pirate</strong> <span class="kk">/ˈpaɪrət/</span> are jumping on the <strong>farm</strong> <span class="kk">/fɑrm/</span>.
+            <div class="kk-badge">💡 單字對照: clown = 小丑 | pirate = 海盜 | farm = 農場</div>
+        </li>
+        <li class="speaking-item">
+            2. A <strong>tall</strong> <span class="kk">/tɔl/</span> <strong>farmer</strong> <span class="kk">/ˈfɑrmɚ/</span> is looking at the <strong>kangaroo</strong> <span class="kk">/ˌkæŋɡəˈru/</span> and the <strong>panda</strong> <span class="kk">/ˈpændə/</span>.
+            <div class="kk-badge">💡 單字對照: tall = 高大的 | farmer = 農夫 | kangaroo = 袋鼠 | panda = 熊貓</div>
+        </li>
+        <li class="speaking-item">
+            3. The cute <strong>puppy</strong> <span class="kk">/ˈpʌpi/</span> and the small <strong>kitten</strong> <span class="kk">/ˈkɪtn̩/</span> are playing with a <strong>rabbit</strong> <span class="kk">/ˈræbɪt/</span>.
+            <div class="kk-badge">💡 單字對照: puppy = 小狗 | kitten = 小貓 | rabbit = 兔子</div>
+        </li>
+        <li class="speaking-item">
+            4. Look! A green <strong>parrot</strong> <span class="kk">/ˈpærət/</span> is sitting on the <strong>cage</strong> <span class="kk">/kedʒ/</span>, and a black <strong>bat</strong> <span class="kk">/bæt/</span> is under the <strong>roof</strong> <span class="kk">/ruf/</span>.
+            <div class="kk-badge">💡 單字對照: parrot = 鸚鵡 | cage = 籠子 | bat = 蝙蝠 | roof = 屋頂</div>
+        </li>
+        <li class="speaking-item">
+            5. The smart <strong>dolphin</strong> <span class="kk">/ˈdɑlfɪn/</span> and the big grey <strong>whale</strong> <span class="kk">/wel/</span> are swimming away from the scary <strong>shark</strong> <span class="kk">/ʃɑrk/</span>.
+            <div class="kk-badge">💡 單字對照: dolphin = 海豚 | whale = 鯨魚 | shark = 鯊魚</div>
+        </li>
+        <li class="speaking-item">
+            6. The funny <strong>comic book</strong> <span class="kk">/ˈkɑmɪk bʊk/</span> and fast <strong>roller skates</strong> <span class="kk">/ˈrolɚ skets/</span> are on the desk next to a <strong>lion</strong> <span class="kk">/ˈlaɪən/</span> toy.
+            <div class="kk-badge">💡 單字對照: comic book = 漫畫書 | roller skates = 輪滑鞋 | lion = 獅子</div>
+        </li>
     </ul>
 
 </div>
