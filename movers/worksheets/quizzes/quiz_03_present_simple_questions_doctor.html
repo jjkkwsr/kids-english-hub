@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 3 Quiz: Present Simple Questions & At the Doctor's 🩺 (Single-Column Hints)</title>
+    <title>Lesson 3 Quiz: Present Simple Questions & At the Doctor's 🩺</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap');
 
@@ -79,13 +79,13 @@
             margin-bottom: 20px;
         }
 
-        /* Single-Column Relaxed Question Cards */
+        /* Single-Column Question Cards */
         .question-card {
             background: #ffffff;
-            border: 1px solid #000000;
+            border: 1.5px solid #000000;
             border-radius: 8px;
-            padding: 16px 20px;
-            margin-bottom: 20px;
+            padding: 18px 20px;
+            margin-bottom: 22px;
             page-break-inside: avoid;
         }
 
@@ -100,7 +100,14 @@
             font-size: 17px;
             font-weight: 600;
             line-height: 1.6;
-            margin-bottom: 12px;
+            margin-bottom: 14px;
+        }
+
+        .blank {
+            display: inline-block;
+            width: 80px;
+            border-bottom: 2px solid #000000;
+            margin: 0 4px;
         }
 
         .q-hint {
@@ -115,26 +122,32 @@
             display: inline-block;
         }
 
-        .blank {
-            display: inline-block;
-            border-bottom: 2px solid #000000;
-            min-width: 80px;
-            text-align: center;
-            margin: 0 4px;
+        .sub-option-block {
+            margin-top: 10px;
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            padding: 8px 12px;
         }
 
-        /* Options Space */
+        .sub-option-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 6px;
+        }
+
         .options-grid {
             display: flex;
-            gap: 32px;
+            gap: 28px;
+            font-size: 15.5px;
+            font-weight: 600;
         }
 
         .option-item {
-            font-size: 16px;
-            font-weight: 500;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
         }
 
         .checkbox {
@@ -142,93 +155,38 @@
             height: 18px;
             border: 1.5px solid #000000;
             border-radius: 3px;
-            display: inline-block;
             background: #ffffff;
+            display: inline-block;
         }
 
-        /* Hints Helper Corner (Single-Column Vertical List) */
+        /* Hints Helper Corner */
         .hints-section {
             border: 1.5px dashed #000000;
             border-radius: 8px;
-            padding: 16px 20px;
-            margin: 28px 0;
+            padding: 16px;
+            margin-top: 32px;
+            margin-bottom: 24px;
             background: #ffffff;
             page-break-inside: avoid;
         }
 
         .hints-title {
-            font-size: 15.5px;
+            font-size: 16px;
             font-weight: 700;
             color: #000000;
             margin-bottom: 12px;
-            border-bottom: 1.5px solid #111827;
-            padding-bottom: 6px;
         }
 
         .hints-list {
             display: flex;
             flex-direction: column;
-            gap: 8px;
-        }
-
-        .hint-item {
+            gap: 6px;
             font-size: 14px;
-            color: #374151;
             line-height: 1.5;
-            border-bottom: 1px dashed #e5e7eb;
-            padding-bottom: 6px;
-        }
-
-        .hint-item:last-child {
-            border-bottom: none;
-            padding-bottom: 0;
         }
 
         .hint-item strong {
             color: #000000;
-            margin-right: 4px;
-        }
-
-        /* Speaking Section */
-        .speaking-list {
-            list-style: none;
-            padding-left: 0;
-            margin-top: 14px;
-        }
-
-        .speaking-item {
-            background: #ffffff;
-            border: 1px solid #000000;
-            padding: 12px 16px;
-            border-radius: 6px;
-            margin-bottom: 14px;
-            font-size: 16px;
-            font-weight: 600;
-            line-height: 1.6;
-            page-break-inside: avoid;
-        }
-
-        .kk {
-            font-size: 13px;
-            font-weight: 600;
-            color: #2563eb;
-            background: #eff6ff;
-            padding: 1px 5px;
-            border-radius: 4px;
-            margin-left: 2px;
-            margin-right: 4px;
-            font-family: 'Fredoka', sans-serif;
-        }
-
-        .kk-badge {
-            margin-top: 6px;
-            font-size: 13px;
-            font-weight: 500;
-            color: #374151;
-            background: #f3f4f6;
-            padding: 4px 10px;
-            border-radius: 4px;
-            display: block;
         }
 
         @media print {
@@ -243,235 +201,455 @@
 
     <!-- Header -->
     <div class="quiz-header">
-        <h1 class="title">🩺 Lesson 3 Quiz: Present Simple Questions & At the Doctor's (20 Questions)</h1>
+        <h1 class="title">Lesson 3 Quiz: Present Simple Questions & At the Doctor's 🩺</h1>
         <div class="meta-row">
-            <div>Name (姓名): <span class="meta-line"></span></div>
-            <div>Date (日期): <span class="meta-line"></span></div>
-            <div class="score-box">Score: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; / 20</div>
+            <div>Name: <span class="meta-line"></span></div>
+            <div>Date: <span class="meta-line"></span></div>
+            <div class="score-box">Score: ______ / 40</div>
         </div>
     </div>
 
-    <!-- Part 1 -->
-    <div class="section-title">Part 1: Multiple Choice (單字與文法 20 題選擇題)</div>
-    <div class="instruction">Choose the best answer for each question. (請為每個題目選出最合適的答案。)</div>
+    <!-- Questions Title -->
+    <div class="section-title">Multiple Choice Questions (雙空格選擇題 20 題 / 共 40 格)</div>
+    <div class="instruction">請仔細閱讀題目，針對空格 (1) 選出正確文法，針對空格 (2) 選出正確單字 (每格計 1 分，共 40 分)：</div>
 
-    <!-- Q1 (Ans: A) -->
+    <!-- Q1 (Ans: (1) A. Do  (2) A. cough) -->
     <div class="question-card">
         <div class="q-number">Question 1</div>
-        <div class="q-text">1. <span class="blank"></span> you have a bad cough today? — Yes, I do. <span class="q-hint">💡 單字對照: cough = 咳嗽</span></div>
-        <div class="options-grid">
-            <div class="option-item"><span class="checkbox"></span> A. Do</div>
-            <div class="option-item"><span class="checkbox"></span> B. Does</div>
-            <div class="option-item"><span class="checkbox"></span> C. Is</div>
+        <div class="q-text">1. (1) <span class="blank"></span> you have a bad (2) <span class="blank"></span> today? — Yes, I do.</div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(1) 文法選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. Do</div>
+                <div class="option-item"><span class="checkbox"></span> B. Does</div>
+                <div class="option-item"><span class="checkbox"></span> C. Is</div>
+            </div>
+        </div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(2) 單字選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. cough</div>
+                <div class="option-item"><span class="checkbox"></span> B. earache</div>
+                <div class="option-item"><span class="checkbox"></span> C. headache</div>
+            </div>
         </div>
     </div>
 
-    <!-- Q2 (Ans: B) -->
+    <!-- Q2 (Ans: (1) B. Does  (2) B. stomach) -->
     <div class="question-card">
         <div class="q-number">Question 2</div>
-        <div class="q-text">2. Does he feel sick with a terrible <span class="blank"></span>? — Yes, his stomach hurts. <span class="q-hint">💡 單字對照: terrible = 嚴重的 | hurts = 疼痛</span></div>
-        <div class="options-grid">
-            <div class="option-item"><span class="checkbox"></span> A. moustache</div>
-            <div class="option-item"><span class="checkbox"></span> B. stomachache</div>
-            <div class="option-item"><span class="checkbox"></span> C. neck</div>
+        <div class="q-text">2. (1) <span class="blank"></span> he feel sick with a terrible (2) <span class="blank"></span> pain? — Yes, he does. <span class="q-hint">💡 單字對照: terrible = 嚴重的</span></div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(1) 文法選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. Do</div>
+                <div class="option-item"><span class="checkbox"></span> B. Does</div>
+                <div class="option-item"><span class="checkbox"></span> C. Is</div>
+            </div>
+        </div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(2) 單字選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. moustache</div>
+                <div class="option-item"><span class="checkbox"></span> B. stomach</div>
+                <div class="option-item"><span class="checkbox"></span> C. neck</div>
+            </div>
         </div>
     </div>
 
-    <!-- Q3 (Ans: C) -->
+    <!-- Q3 (Ans: (1) C. have  (2) C. cold) -->
     <div class="question-card">
         <div class="q-number">Question 3</div>
-        <div class="q-text">3. Does she <span class="blank"></span> a temperature? — No, she doesn't. <span class="q-hint">💡 單字對照: temperature = 體溫/發燒</span></div>
-        <div class="options-grid">
-            <div class="option-item"><span class="checkbox"></span> A. having</div>
-            <div class="option-item"><span class="checkbox"></span> B. has</div>
-            <div class="option-item"><span class="checkbox"></span> C. have</div>
+        <div class="q-text">3. Does she (1) <span class="blank"></span> a bad (2) <span class="blank"></span> in winter? — No, she doesn't. <span class="q-hint">💡 單字對照: winter = 冬天</span></div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(1) 文法選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. having</div>
+                <div class="option-item"><span class="checkbox"></span> B. has</div>
+                <div class="option-item"><span class="checkbox"></span> C. have</div>
+            </div>
+        </div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(2) 單字選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. curly</div>
+                <div class="option-item"><span class="checkbox"></span> B. plant</div>
+                <div class="option-item"><span class="checkbox"></span> C. cold</div>
+            </div>
         </div>
     </div>
 
-    <!-- Q4 (Ans: B) -->
+    <!-- Q4 (Ans: (1) B. have  (2) B. earache) -->
     <div class="question-card">
         <div class="q-number">Question 4</div>
-        <div class="q-text">4. Does your sister have an <span class="blank"></span> after swimming? — Yes, her ear hurts. <span class="q-hint">💡 單字對照: swimming = 游泳 | hurts = 疼痛</span></div>
-        <div class="options-grid">
-            <div class="option-item"><span class="checkbox"></span> A. arm</div>
-            <div class="option-item"><span class="checkbox"></span> B. earache</div>
-            <div class="option-item"><span class="checkbox"></span> C. toothache</div>
+        <div class="q-text">4. Does your sister (1) <span class="blank"></span> an (2) <span class="blank"></span> after swimming? — Yes, she does. <span class="q-hint">💡 單字對照: swimming = 游泳</span></div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(1) 文法選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. has</div>
+                <div class="option-item"><span class="checkbox"></span> B. have</div>
+                <div class="option-item"><span class="checkbox"></span> C. having</div>
+            </div>
+        </div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(2) 單字選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. arm</div>
+                <div class="option-item"><span class="checkbox"></span> B. earache</div>
+                <div class="option-item"><span class="checkbox"></span> C. tooth</div>
+            </div>
         </div>
     </div>
 
-    <!-- Q5 (Ans: A) -->
+    <!-- Q5 (Ans: (1) A. Does  (2) A. headache) -->
     <div class="question-card">
         <div class="q-number">Question 5</div>
-        <div class="q-text">5. Does Tom take medicine for his bad <span class="blank"></span>? — Yes, his head hurts. <span class="q-hint">💡 單字對照: medicine = 藥物 | hurts = 疼痛</span></div>
-        <div class="options-grid">
-            <div class="option-item"><span class="checkbox"></span> A. headache</div>
-            <div class="option-item"><span class="checkbox"></span> B. backache</div>
-            <div class="option-item"><span class="checkbox"></span> C. shoulder</div>
+        <div class="q-text">5. (1) <span class="blank"></span> Tom take medicine for his bad (2) <span class="blank"></span>? — Yes, he does. <span class="q-hint">💡 單字對照: medicine = 藥物</span></div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(1) 文法選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. Does</div>
+                <div class="option-item"><span class="checkbox"></span> B. Do</div>
+                <div class="option-item"><span class="checkbox"></span> C. Is</div>
+            </div>
+        </div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(2) 單字選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. headache</div>
+                <div class="option-item"><span class="checkbox"></span> B. shoulder</div>
+                <div class="option-item"><span class="checkbox"></span> C. back</div>
+            </div>
         </div>
     </div>
 
-    <!-- Q6 (Ans: C) -->
+    <!-- Q6 (Ans: (1) C. doctor  (2) C. check) -->
     <div class="question-card">
         <div class="q-number">Question 6</div>
-        <div class="q-text">6. Does the doctor <span class="blank"></span> your chest with a stethoscope? <span class="q-hint">💡 單字對照: chest = 胸口 | stethoscope = 聽診器</span></div>
-        <div class="options-grid">
-            <div class="option-item"><span class="checkbox"></span> A. checks</div>
-            <div class="option-item"><span class="checkbox"></span> B. checked</div>
-            <div class="option-item"><span class="checkbox"></span> C. check</div>
+        <div class="q-text">6. Does the kind (1) <span class="blank"></span> (2) <span class="blank"></span> your chest with a stethoscope? <span class="q-hint">💡 單字對照: chest = 胸口 | stethoscope = 聽診器</span></div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(1) 單字選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. nurse</div>
+                <div class="option-item"><span class="checkbox"></span> B. plant</div>
+                <div class="option-item"><span class="checkbox"></span> C. doctor</div>
+            </div>
+        </div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(2) 文法選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. checks</div>
+                <div class="option-item"><span class="checkbox"></span> B. checked</div>
+                <div class="option-item"><span class="checkbox"></span> C. check</div>
+            </div>
         </div>
     </div>
 
-    <!-- Q7 (Ans: B) -->
+    <!-- Q7 (Ans: (1) B. Do  (2) B. back) -->
     <div class="question-card">
         <div class="q-number">Question 7</div>
-        <div class="q-text">7. Do you have a painful <span class="blank"></span> after carrying a heavy bag? <span class="q-hint">💡 單字對照: painful = 疼痛的 | carrying = 提背 | heavy bag = 重包包</span></div>
-        <div class="options-grid">
-            <div class="option-item"><span class="checkbox"></span> A. cough</div>
-            <div class="option-item"><span class="checkbox"></span> B. backache</div>
-            <div class="option-item"><span class="checkbox"></span> C. cold</div>
+        <div class="q-text">7. (1) <span class="blank"></span> you have a painful (2) <span class="blank"></span> after carrying a heavy bag? <span class="q-hint">💡 單字對照: painful = 疼痛的 | carrying = 提背 | heavy bag = 重包包</span></div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(1) 文法選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. Does</div>
+                <div class="option-item"><span class="checkbox"></span> B. Do</div>
+                <div class="option-item"><span class="checkbox"></span> C. Is</div>
+            </div>
+        </div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(2) 單字選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. cough</div>
+                <div class="option-item"><span class="checkbox"></span> B. back</div>
+                <div class="option-item"><span class="checkbox"></span> C. tea</div>
+            </div>
         </div>
     </div>
 
-    <!-- Q8 (Ans: C) -->
+    <!-- Q8 (Ans: (1) C. have  (2) C. moustache) -->
     <div class="question-card">
         <div class="q-number">Question 8</div>
-        <div class="q-text">8. Does the tall man have a thick black <span class="blank"></span> above his lip? <span class="q-hint">💡 單字對照: thick = 濃密的 | lip = 嘴唇</span></div>
-        <div class="options-grid">
-            <div class="option-item"><span class="checkbox"></span> A. stomach</div>
-            <div class="option-item"><span class="checkbox"></span> B. neck</div>
-            <div class="option-item"><span class="checkbox"></span> C. moustache</div>
+        <div class="q-text">8. Does the tall man (1) <span class="blank"></span> a thick black (2) <span class="blank"></span> above his lip? <span class="q-hint">💡 單字對照: thick = 濃密的 | lip = 嘴唇</span></div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(1) 文法選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. has</div>
+                <div class="option-item"><span class="checkbox"></span> B. having</div>
+                <div class="option-item"><span class="checkbox"></span> C. have</div>
+            </div>
+        </div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(2) 單字選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. stomach</div>
+                <div class="option-item"><span class="checkbox"></span> B. neck</div>
+                <div class="option-item"><span class="checkbox"></span> C. moustache</div>
+            </div>
         </div>
     </div>
 
-    <!-- Q9 (Ans: A) -->
+    <!-- Q9 (Ans: (1) A. Does  (2) A. tea) -->
     <div class="question-card">
         <div class="q-number">Question 9</div>
-        <div class="q-text">9. Does your little brother <span class="blank"></span> when he has a fever? — Yes, he cries a lot. <span class="q-hint">💡 單字對照: fever = 發燒 | cries = 哭泣</span></div>
-        <div class="options-grid">
-            <div class="option-item"><span class="checkbox"></span> A. cry</div>
-            <div class="option-item"><span class="checkbox"></span> B. cries</div>
-            <div class="option-item"><span class="checkbox"></span> C. crying</div>
+        <div class="q-text">9. (1) <span class="blank"></span> your brother drink hot (2) <span class="blank"></span> when he is cold? <span class="q-hint">💡 單字對照: hot = 熱的</span></div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(1) 文法選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. Does</div>
+                <div class="option-item"><span class="checkbox"></span> B. Do</div>
+                <div class="option-item"><span class="checkbox"></span> C. Is</div>
+            </div>
+        </div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(2) 單字選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. tea</div>
+                <div class="option-item"><span class="checkbox"></span> B. plant</div>
+                <div class="option-item"><span class="checkbox"></span> C. back</div>
+            </div>
         </div>
     </div>
 
-    <!-- Q10 (Ans: B) -->
+    <!-- Q10 (Ans: (1) B. nurse  (2) B. give) -->
     <div class="question-card">
         <div class="q-number">Question 10</div>
-        <div class="q-text">10. Do they go to the hospital to see the friendly <span class="blank"></span>? <span class="q-hint">💡 單字對照: hospital = 醫院 | friendly = 親切的</span></div>
-        <div class="options-grid">
-            <div class="option-item"><span class="checkbox"></span> A. back</div>
-            <div class="option-item"><span class="checkbox"></span> B. doctor</div>
-            <div class="option-item"><span class="checkbox"></span> C. cold</div>
+        <div class="q-text">10. Does the friendly (1) <span class="blank"></span> (2) <span class="blank"></span> pink medicine to the patients? <span class="q-hint">💡 單字對照: patients = 病人</span></div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(1) 單字選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. doctor</div>
+                <div class="option-item"><span class="checkbox"></span> B. nurse</div>
+                <div class="option-item"><span class="checkbox"></span> C. plant</div>
+            </div>
+        </div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(2) 文法選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. gives</div>
+                <div class="option-item"><span class="checkbox"></span> B. give</div>
+                <div class="option-item"><span class="checkbox"></span> C. giving</div>
+            </div>
         </div>
     </div>
 
-    <!-- Q11 (Ans: C) -->
+    <!-- Q11 (Ans: (1) C. shoulder  (2) C. hurt) -->
     <div class="question-card">
         <div class="q-number">Question 11</div>
-        <div class="q-text">11. Does your <span class="blank"></span> hurt after playing tennis? — Yes, my arm joint feels sore. <span class="q-hint">💡 單字對照: tennis = 網球 | arm joint = 關節 | sore = 痠痛的</span></div>
-        <div class="options-grid">
-            <div class="option-item"><span class="checkbox"></span> A. stomachache</div>
-            <div class="option-item"><span class="checkbox"></span> B. toothache</div>
-            <div class="option-item"><span class="checkbox"></span> C. shoulder</div>
+        <div class="q-text">11. Does your (1) <span class="blank"></span> (2) <span class="blank"></span> after playing tennis? <span class="q-hint">💡 單字對照: tennis = 網球</span></div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(1) 單字選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. stomachache</div>
+                <div class="option-item"><span class="checkbox"></span> B. toothache</div>
+                <div class="option-item"><span class="checkbox"></span> C. shoulder</div>
+            </div>
+        </div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(2) 文法選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. hurting</div>
+                <div class="option-item"><span class="checkbox"></span> B. hurts</div>
+                <div class="option-item"><span class="checkbox"></span> C. hurt</div>
+            </div>
         </div>
     </div>
 
-    <!-- Q12 (Ans: A) -->
+    <!-- Q12 (Ans: (1) A. Does  (2) B. neck) -->
     <div class="question-card">
         <div class="q-number">Question 12</div>
-        <div class="q-text">12. Does the kind <span class="blank"></span> give you pink medicine at the clinic? <span class="q-hint">💡 單字對照: kind = 親切的 | medicine = 藥物 | clinic = 診所</span></div>
-        <div class="options-grid">
-            <div class="option-item"><span class="checkbox"></span> A. nurse</div>
-            <div class="option-item"><span class="checkbox"></span> B. neck</div>
-            <div class="option-item"><span class="checkbox"></span> C. earache</div>
+        <div class="q-text">12. (1) <span class="blank"></span> the doctor look at your (2) <span class="blank"></span> when you turn your head? <span class="q-hint">💡 單字對照: turn = 轉動 | head = 頭</span></div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(1) 文法選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. Does</div>
+                <div class="option-item"><span class="checkbox"></span> B. Do</div>
+                <div class="option-item"><span class="checkbox"></span> C. Is</div>
+            </div>
+        </div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(2) 單字選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. stomach</div>
+                <div class="option-item"><span class="checkbox"></span> B. neck</div>
+                <div class="option-item"><span class="checkbox"></span> C. cough</div>
+            </div>
         </div>
     </div>
 
-    <!-- Q13 (Ans: B) -->
+    <!-- Q13 (Ans: (1) C. want  (2) A. cup) -->
     <div class="question-card">
         <div class="q-number">Question 13</div>
-        <div class="q-text">13. Does Ben have a bad <span class="blank"></span>? — Yes, he wears a warm scarf around his neck. <span class="q-hint">💡 單字對照: wears = 圍戴 | scarf = 圍巾 | neck = 脖子</span></div>
-        <div class="options-grid">
-            <div class="option-item"><span class="checkbox"></span> A. stomachache</div>
-            <div class="option-item"><span class="checkbox"></span> B. cold</div>
-            <div class="option-item"><span class="checkbox"></span> C. moustache</div>
+        <div class="q-text">13. Does she (1) <span class="blank"></span> a warm (2) <span class="blank"></span> of water before sleeping?</div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(1) 文法選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. wants</div>
+                <div class="option-item"><span class="checkbox"></span> B. wanting</div>
+                <div class="option-item"><span class="checkbox"></span> C. want</div>
+            </div>
+        </div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(2) 單字選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. cup</div>
+                <div class="option-item"><span class="checkbox"></span> B. back</div>
+                <div class="option-item"><span class="checkbox"></span> C. nurse</div>
+            </div>
         </div>
     </div>
 
-    <!-- Q14 (Ans: C) -->
+    <!-- Q14 (Ans: (1) B. Does  (2) C. curly) -->
     <div class="question-card">
         <div class="q-number">Question 14</div>
-        <div class="q-text">14. Does your <span class="blank"></span> hurt when you swallow food? — Yes, it feels sore. <span class="q-hint">💡 單字對照: swallow = 吞嚥 | sore = 痠痛的</span></div>
-        <div class="options-grid">
-            <div class="option-item"><span class="checkbox"></span> A. backache</div>
-            <div class="option-item"><span class="checkbox"></span> B. earache</div>
-            <div class="option-item"><span class="checkbox"></span> C. throat</div>
+        <div class="q-text">14. (1) <span class="blank"></span> the girl with (2) <span class="blank"></span> hair feel unwell today? <span class="q-hint">💡 單字對照: unwell = 不舒服的</span></div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(1) 文法選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. Is</div>
+                <div class="option-item"><span class="checkbox"></span> B. Does</div>
+                <div class="option-item"><span class="checkbox"></span> C. Do</div>
+            </div>
+        </div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(2) 單字選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. fat</div>
+                <div class="option-item"><span class="checkbox"></span> B. thin</div>
+                <div class="option-item"><span class="checkbox"></span> C. curly</div>
+            </div>
         </div>
     </div>
 
-    <!-- Q15 (Ans: B) -->
+    <!-- Q15 (Ans: (1) B. hurt  (2) B. teeth) -->
     <div class="question-card">
         <div class="q-number">Question 15</div>
-        <div class="q-text">15. Does eating too many candies give you a sharp <span class="blank"></span>? <span class="q-hint">💡 單字對照: candies = 糖果 | sharp = 劇烈的</span></div>
-        <div class="options-grid">
-            <div class="option-item"><span class="checkbox"></span> A. shoulder</div>
-            <div class="option-item"><span class="checkbox"></span> B. toothache</div>
-            <div class="option-item"><span class="checkbox"></span> C. nurse</div>
+        <div class="q-text">15. Does eating too many candies (1) <span class="blank"></span> your (2) <span class="blank"></span>? <span class="q-hint">💡 單字對照: candies = 糖果</span></div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(1) 文法選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. hurts</div>
+                <div class="option-item"><span class="checkbox"></span> B. hurt</div>
+                <div class="option-item"><span class="checkbox"></span> C. hurting</div>
+            </div>
+        </div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(2) 單字選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. shoulder</div>
+                <div class="option-item"><span class="checkbox"></span> B. teeth</div>
+                <div class="option-item"><span class="checkbox"></span> C. neck</div>
+            </div>
         </div>
     </div>
 
-    <!-- Q16 (Ans: A) -->
+    <!-- Q16 (Ans: (1) C. Does  (2) A. better) -->
     <div class="question-card">
         <div class="q-number">Question 16</div>
-        <div class="q-text">16. Do your feet <span class="blank"></span> after walking for two hours? — Yes, they do. <span class="q-hint">💡 單字對照: feet = 雙腳 | walking = 走路</span></div>
-        <div class="options-grid">
-            <div class="option-item"><span class="checkbox"></span> A. hurt</div>
-            <div class="option-item"><span class="checkbox"></span> B. hurts</div>
-            <div class="option-item"><span class="checkbox"></span> C. hurting</div>
+        <div class="q-text">16. (1) <span class="blank"></span> she feel (2) <span class="blank"></span> after taking a day of rest? <span class="q-hint">💡 單字對照: rest = 休息</span></div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(1) 文法選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. Do</div>
+                <div class="option-item"><span class="checkbox"></span> B. Is</div>
+                <div class="option-item"><span class="checkbox"></span> C. Does</div>
+            </div>
+        </div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(2) 單字選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. better</div>
+                <div class="option-item"><span class="checkbox"></span> B. fat</div>
+                <div class="option-item"><span class="checkbox"></span> C. thin</div>
+            </div>
         </div>
     </div>
 
-    <!-- Q17 (Ans: C) -->
+    <!-- Q17 (Ans: (1) A. Do  (2) C. hurt) -->
     <div class="question-card">
         <div class="q-number">Question 17</div>
-        <div class="q-text">17. Does the doctor look at your <span class="blank"></span> when you turn your head? <span class="q-hint">💡 單字對照: turn = 轉動 | head = 頭部</span></div>
-        <div class="options-grid">
-            <div class="option-item"><span class="checkbox"></span> A. stomachache</div>
-            <div class="option-item"><span class="checkbox"></span> B. cough</div>
-            <div class="option-item"><span class="checkbox"></span> C. neck</div>
+        <div class="q-text">17. (1) <span class="blank"></span> your feet (2) <span class="blank"></span> after walking for two hours? <span class="q-hint">💡 單字對照: feet = 雙腳 | walking = 走路</span></div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(1) 文法選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. Do</div>
+                <div class="option-item"><span class="checkbox"></span> B. Does</div>
+                <div class="option-item"><span class="checkbox"></span> C. Is</div>
+            </div>
+        </div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(2) 文法選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. hurting</div>
+                <div class="option-item"><span class="checkbox"></span> B. hurts</div>
+                <div class="option-item"><span class="checkbox"></span> C. hurt</div>
+            </div>
         </div>
     </div>
 
-    <!-- Q18 (Ans: B) -->
+    <!-- Q18 (Ans: (1) B. plant  (2) B. need) -->
     <div class="question-card">
         <div class="q-number">Question 18</div>
-        <div class="q-text">18. Does the patient lie down on his <span class="blank"></span> for the medical examination? <span class="q-hint">💡 單字對照: patient = 病人 | lie down = 躺下 | examination = 檢查</span></div>
-        <div class="options-grid">
-            <div class="option-item"><span class="checkbox"></span> A. headache</div>
-            <div class="option-item"><span class="checkbox"></span> B. back</div>
-            <div class="option-item"><span class="checkbox"></span> C. nurse</div>
+        <div class="q-text">18. Does the green (1) <span class="blank"></span> (2) <span class="blank"></span> sunshine near the window? <span class="q-hint">💡 單字對照: sunshine = 陽光 | window = 窗戶</span></div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(1) 單字選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. doctor</div>
+                <div class="option-item"><span class="checkbox"></span> B. plant</div>
+                <div class="option-item"><span class="checkbox"></span> C. nurse</div>
+            </div>
+        </div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(2) 文法選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. needing</div>
+                <div class="option-item"><span class="checkbox"></span> B. need</div>
+                <div class="option-item"><span class="checkbox"></span> C. needs</div>
+            </div>
         </div>
     </div>
 
-    <!-- Q19 (Ans: A) -->
+    <!-- Q19 (Ans: (1) A. Does  (2) A. fat) -->
     <div class="question-card">
         <div class="q-number">Question 19</div>
-        <div class="q-text">19. Does your <span class="blank"></span> feel full after a big meal? <span class="q-hint">💡 單字對照: feel full = 感覺飽 | big meal = 大餐</span></div>
-        <div class="options-grid">
-            <div class="option-item"><span class="checkbox"></span> A. stomach</div>
-            <div class="option-item"><span class="checkbox"></span> B. toothache</div>
-            <div class="option-item"><span class="checkbox"></span> C. earache</div>
+        <div class="q-text">19. (1) <span class="blank"></span> the (2) <span class="blank"></span> cat sleep all day on the sofa?</div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(1) 文法選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. Does</div>
+                <div class="option-item"><span class="checkbox"></span> B. Do</div>
+                <div class="option-item"><span class="checkbox"></span> C. Is</div>
+            </div>
+        </div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(2) 單字選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. fat</div>
+                <div class="option-item"><span class="checkbox"></span> B. thin</div>
+                <div class="option-item"><span class="checkbox"></span> C. curly</div>
+            </div>
         </div>
     </div>
 
-    <!-- Q20 (Ans: C) -->
+    <!-- Q20 (Ans: (1) C. Does  (2) C. thin) -->
     <div class="question-card">
         <div class="q-number">Question 20</div>
-        <div class="q-text">20. Does she feel better after taking a day of rest? — Yes, she <span class="blank"></span>. <span class="q-hint">💡 單字對照: feel better = 感覺好多了 | rest = 休息</span></div>
-        <div class="options-grid">
-            <div class="option-item"><span class="checkbox"></span> A. do</div>
-            <div class="option-item"><span class="checkbox"></span> B. is</div>
-            <div class="option-item"><span class="checkbox"></span> C. does</div>
+        <div class="q-text">20. (1) <span class="blank"></span> the (2) <span class="blank"></span> boy need to eat more healthy food? <span class="q-hint">💡 單字對照: healthy food = 健康食物</span></div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(1) 文法選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. Do</div>
+                <div class="option-item"><span class="checkbox"></span> B. Is</div>
+                <div class="option-item"><span class="checkbox"></span> C. Does</div>
+            </div>
+        </div>
+        <div class="sub-option-block">
+            <div class="sub-option-title">(2) 單字選項:</div>
+            <div class="options-grid">
+                <div class="option-item"><span class="checkbox"></span> A. fat</div>
+                <div class="option-item"><span class="checkbox"></span> B. curly</div>
+                <div class="option-item"><span class="checkbox"></span> C. thin</div>
+            </div>
         </div>
     </div>
 
@@ -479,59 +657,28 @@
     <div class="hints-section">
         <div class="hints-title">💡 Hints Helper Corner (提示求助小站 - 遇到不會的題目可以看這裡喔！):</div>
         <div class="hints-list">
-            <div class="hint-item"><strong>Q1:</strong> 主詞是 you，現在簡單式問句要用 Do 還是 Does 開頭呢？</div>
-            <div class="hint-item"><strong>Q2:</strong> 肚子痛的英文單字是什麼呢？ (stomachache)</div>
-            <div class="hint-item"><strong>Q3:</strong> 看到 Does 幫忙問問題，動詞要變回原形 (have) 喔！</div>
-            <div class="hint-item"><strong>Q4:</strong> 耳朵痛的英文單字是哪一個？ (earache)</div>
-            <div class="hint-item"><strong>Q5:</strong> 頭痛的英文單字是什麼呢？ (headache)</div>
-            <div class="hint-item"><strong>Q6:</strong> 問句有 Does 開頭，動詞也要保持原形 (check) 喔！</div>
-            <div class="hint-item"><strong>Q7:</strong> 背痛/腰痛的英文單字是哪一個？ (backache)</div>
-            <div class="hint-item"><strong>Q8:</strong> 長在嘴唇上方的「鬍鬚 / 八字鬍」，英文是什麼？ (moustache)</div>
-            <div class="hint-item"><strong>Q9:</strong> 看到 Does 提問，動詞 cry 必須還原成最原始的形狀 喔！</div>
-            <div class="hint-item"><strong>Q10:</strong> 在醫院幫病人看病的「醫生」，英文是哪一個單字？</div>
-            <div class="hint-item"><strong>Q11:</strong> 連接手臂的「肩膀」，英文是哪一個單字？ (shoulder)</div>
-            <div class="hint-item"><strong>Q12:</strong> 在診所協助醫生的「護理師 / 護士」，英文是什麼？ (nurse)</div>
-            <div class="hint-item"><strong>Q13:</strong> 指流鼻水戴圍巾的「感冒」，英文是哪一個單字？ (cold)</div>
-            <div class="hint-item"><strong>Q14:</strong> 吃東西吞嚥會痛的「喉嚨」，英文是哪個單字？ (throat)</div>
-            <div class="hint-item"><strong>Q15:</strong> 吃太多糖果導致的「牙痛」，英文是哪個單字？ (toothache)</div>
-            <div class="hint-item"><strong>Q16:</strong> 問句有 Do 開頭，動詞 hurt 要保持原形 (hurt) 喔！</div>
-            <div class="hint-item"><strong>Q17:</strong> 連接頭部與身體的「脖子 / 頸部」，英文是哪一個？ (neck)</div>
-            <div class="hint-item"><strong>Q18:</strong> 躺下來時靠著床的「背部」，英文是哪個單字？ (back)</div>
-            <div class="hint-item"><strong>Q19:</strong> 消化食物的器官「胃 / 肚子」，英文是哪個單字？ (stomach)</div>
-            <div class="hint-item"><strong>Q20:</strong> 看到問句是 "Does she..." 提問，肯定簡答用 "Yes, she does." 喔！</div>
+            <div class="hint-item"><strong>Q1:</strong> 看到主詞是 you，助動詞要選 Do 還是 Does 呢？咳嗽的英文是什麼？</div>
+            <div class="hint-item"><strong>Q2:</strong> 主詞是 he，助動詞用 Does。胃痛 / 肚子的英文單字是哪一個呢？</div>
+            <div class="hint-item"><strong>Q3:</strong> 助動詞 Does 出現後，後面的動詞要用原形 (have)。感冒的英文是什麼？</div>
+            <div class="hint-item"><strong>Q4:</strong> 助動詞 Does 後接原形動詞 (have)。游泳後的「耳朵痛 (earache)」是哪個？</div>
+            <div class="hint-item"><strong>Q5:</strong> 主詞是 Tom (He)，問句開頭用 Does。「頭痛 (headache)」的英文是什麼？</div>
+            <div class="hint-item"><strong>Q6:</strong> 親切的「醫生 (doctor)」用聽診器看診。Does 後面的檢查要用原形 (check)。</div>
+            <div class="hint-item"><strong>Q7:</strong> 主詞是 you，問句用 Do。背負重物後「背部 / 背痛 (back)」是哪一個單字？</div>
+            <div class="hint-item"><strong>Q8:</strong> 助動詞 Does 後面接原形動詞 (have)。嘴唇上方濃密的「八字鬍 (moustache)」是什麼？</div>
+            <div class="hint-item"><strong>Q9:</strong> 主詞是 your brother (He)，問句用 Does。天冷時喝的熱「茶 (tea)」是哪一個？</div>
+            <div class="hint-item"><strong>Q10:</strong> 親切的「護理師 (nurse)」拿藥。助動詞 Does 後面要接原形動詞 (give)。</div>
+            <div class="hint-item"><strong>Q11:</strong> 打網球後感到痠痛的「肩膀 (shoulder)」英文是什麼？問句動詞用原形 (hurt)。</div>
+            <div class="hint-item"><strong>Q12:</strong> 主詞是 the doctor，問句用 Does。轉頭時檢查的「脖子 / 頸部 (neck)」是哪個？</div>
+            <div class="hint-item"><strong>Q13:</strong> 助動詞 Does 後面接原形動詞 (want)。睡前喝的溫熱「一杯 (cup)」水是哪一個？</div>
+            <div class="hint-item"><strong>Q14:</strong> 主詞是 the girl，問句開頭用 Does。形容「捲捲的 (curly)」頭髮是哪個單字？</div>
+            <div class="hint-item"><strong>Q15:</strong> 吃太多糖果傷害牙齒。Does 後面用原形 (hurt)，「牙齒 (teeth)」的英文是什麼？</div>
+            <div class="hint-item"><strong>Q16:</strong> 主詞是 she，問句開頭用 Does。休息後感覺「好多了 (better)」是哪個單字？</div>
+            <div class="hint-item"><strong>Q17:</strong> 主詞是 your feet (複數)，問句開頭用 Do。走路後「疼痛 (hurt)」要用原形。</div>
+            <div class="hint-item"><strong>Q18:</strong> 窗戶邊綠色的「植物 (plant)」需要陽光。Does 後面的需要要用原形 (need)。</div>
+            <div class="hint-item"><strong>Q19:</strong> 主詞是 the cat，問句用 Does。形容「胖胖的 (fat)」貓咪是哪一個單字？</div>
+            <div class="hint-item"><strong>Q20:</strong> 主詞是 the boy，問句用 Does。形容「瘦瘦的 (thin)」男孩是哪一個單字？</div>
         </div>
     </div>
-
-    <!-- Part 2 -->
-    <div class="section-title">Part 2: Speaking & Read Aloud Task (單字朗讀與問句任務 🗣️)</div>
-    <div class="instruction">請大聲朗讀以下句子，參考粗體字後方的 <strong>KK 音標</strong>，朗讀時並請圈出句中的問句助動詞 (Do / Does)：</div>
-
-    <ul class="speaking-list">
-        <li class="speaking-item">
-            1. Does the <strong>doctor</strong> <span class="kk">/ˈdɑktɚ/</span> with a dark <strong>moustache</strong> <span class="kk">/ˈmʌstæʃ/</span> check your <strong>neck</strong> <span class="kk">/nɛk/</span> and <strong>back</strong> <span class="kk">/bæk/</span>?
-            <div class="kk-badge">💡 單字對照: doctor = 醫生 | moustache = 八字鬍 | neck = 脖子 | back = 背部</div>
-        </li>
-        <li class="speaking-item">
-            2. Does the kind <strong>nurse</strong> <span class="kk">/nɝs/</span> help the patient with a bad <strong>headache</strong> <span class="kk">/ˈhɛdˌek/</span> and a high <strong>temperature</strong> <span class="kk">/ˈtɛmpɚətʃɚ/</span>?
-            <div class="kk-badge">💡 單字對照: nurse = 護理師 | headache = 頭痛 | temperature = 體溫/發燒</div>
-        </li>
-        <li class="speaking-item">
-            3. Do you have a severe <strong>stomachache</strong> <span class="kk">/ˈstʌməkˌek/</span> or a sharp <strong>toothache</strong> <span class="kk">/ˈtuθˌek/</span> in your <strong>stomach</strong> <span class="kk">/ˈstʌmək/</span>?
-            <div class="kk-badge">💡 單字對照: stomachache = 胃痛 | toothache = 牙痛 | stomach = 胃/肚子</div>
-        </li>
-        <li class="speaking-item">
-            4. Does your <strong>shoulder</strong> <span class="kk">/ˈʃoldɚ/</span> or your <strong>throat</strong> <span class="kk">/θrot/</span> <strong>hurt</strong> <span class="kk">/hɝt/</span> when you catch a <strong>cold</strong> <span class="kk">/kold/</span>?
-            <div class="kk-badge">💡 單字對照: shoulder = 肩膀 | throat = 喉嚨 | hurt = 疼痛 | cold = 感冒</div>
-        </li>
-        <li class="speaking-item">
-            5. Does he have a dry <strong>cough</strong> <span class="kk">/kɔf/</span>, a painful <strong>earache</strong> <span class="kk">/ˈɪrˌek/</span>, or a sore <strong>backache</strong> <span class="kk">/ˈbækˌek/</span> today?
-            <div class="kk-badge">💡 單字對照: cough = 咳嗽 | earache = 耳朵痛 | backache = 背痛</div>
-        </li>
-        <li class="speaking-item">
-            6. The <strong>tired</strong> <span class="kk">/taɪrd/</span> boy does not <strong>cry</strong> <span class="kk">/kraɪ/</span> or <strong>climb</strong> <span class="kk">/klaɪm/</span> trees at the <strong>hospital</strong> <span class="kk">/ˈhɑspətḷ/</span>.
-            <div class="kk-badge">💡 單字對照: tired = 疲累的 | cry = 哭泣 | climb = 攀爬 | hospital = 醫院</div>
-        </li>
-    </ul>
 
 </div>
 

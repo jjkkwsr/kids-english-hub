@@ -20,24 +20,24 @@ This specification document outlines the standardized design, layout, typography
 ## 📝 2. Quiz Worksheet Specification (`quiz_XX.html`)
 
 ### **Structure & Volume**
-- **Header**: Name, Date, and Score Box (`Score: ____ / 20`).
-- **Part 1: Multiple Choice Questions (20 Questions)**:
-  - Covers target Grammar lesson + Vocabulary lesson.
-  - **Balanced Option Distribution (A/B/C 隨機分佈規範)**:
-    - Correct options (A, B, C) must be **evenly distributed** across the 20 questions (e.g., ~6 A's, ~7 B's, ~7 C's).
-    - Avoid consecutive duplicate option clusters (no 3+ same option letters in a row). All options A, B, C must be actively utilized.
+- **Header**: Name, Date, and Score Box (`Score: ____ / 40` or based on 1 point per blank).
+- **Part 1 Removal (Part 2 完全移除)**:
+  - Quiz worksheets consist **EXCLUSIVELY of Multiple Choice questions + Hints Helper Corner**. Part 2 Speaking Task has been completely removed to streamline testing.
+- **2-Blank Question Format (雙空格一格文法、一格單字規畫)**:
+  - Each question contains **2 blanks**: `(1) _____` for target grammar testing and `(2) _____` for target vocabulary testing.
+  - **Independent Sub-Options (獨立子選項區)**: Each question card provides 2 separate option groups:
+    - `(1) 文法選項:` A. Does   B. Do   C. Is
+    - `(2) 單字選項:` A. stomachache   B. moustache   C. neck
+  - **100% Vocabulary Coverage Rule (100% 單字覆蓋率與題數動態調整)**:
+    - Every quiz must cover 100% of all target vocabulary words for that lesson (1 target word per question in blank 2).
+    - Minimum **20 questions / 40 blanks** per quiz. If a lesson has more than 20 target vocabulary words (e.g. Lesson 1 with 21 words), dynamically increase the question count to 21 questions / 42 blanks to guarantee complete coverage.
+  - **Balanced Option Distribution (A/B/C 雙空格獨立隨機分佈)**:
+    - Both Blank (1) and Blank (2) options must independently achieve balanced A/B/C distribution across all questions (~6-7 A's, ~6-7 B's, ~6-7 C's) with no 3+ consecutive duplicate option letters.
   - **Question Stem Vocabulary Hints (題幹生字對照提示)**:
-    - Whenever a question stem contains non-blank target words or secondary vocabulary (e.g., `stethoscope`, `swallow`, `clinic`, `patient`, `examination`, `scarf`), attach an inline **`💡 單字對照: ...`** badge next to the question text (e.g., `<span class="q-hint">💡 單字對照: clinic = 診所 | medicine = 藥物</span>`) to eliminate reading comprehension barriers for kids.
+    - Whenever a question stem contains secondary non-blank words (e.g., `stethoscope`, `swallow`, `clinic`, `patient`, `examination`), attach an inline **`💡 單字對照: ...`** badge next to the question text (e.g., `<span class="q-hint">💡 單字對照: clinic = 診所 | medicine = 藥物</span>`).
 - **Hints Helper Corner (提示求助小站)**:
-  - **DO NOT** place grammar hint boxes immediately inside individual question cards.
   - Gather all Traditional Chinese hints into a dedicated **`Hints Helper Corner`** box (`border: 1.5px dashed #000`) placed at the end of Part 1.
-  - **Single-Column Vertical List Layout**: Format hints as a single vertical column (`Q1: ...`, `Q2: ...`, `Q3: ...`) line-by-line rather than a 2-column grid, making it effortless for kids to trace question numbers.
-- **Part 2: Speaking & Read Aloud Task**:
-  - Must cover **100% of all 20 vocabulary words** from the target vocabulary CSV list.
-  - **Inline KK Phonetic Symbols (句中內嵌 KK 音標)**:
-    - Annotate **KK Phonetic Symbols** (`<span class="kk">/ˈdɑktɚ/</span>`) directly next to each target vocabulary word inside the sentence text.
-    - Provide a **`💡 單字對照: ...`** card directly below each sentence listing target word to Traditional Chinese translation pairs.
-  - Includes a specific grammar task (e.g., *"Circle all Be-verbs / Do-Does auxiliary verbs while reading aloud"*).
+  - **Single-Column Vertical List Layout**: Format hints as a single vertical column (`Q1: ...`, `Q2: ...`, `Q3: ...`) line-by-line.
 
 ### **Layout & Typography Rules**
 - **Single-Column Relaxed Layout**:
